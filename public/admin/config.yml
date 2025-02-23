@@ -68,8 +68,4 @@ collections:
       - { label: "Adresse", name: "address", widget: "string" }
       - { label: "Téléphone", name: "phone", widget: "string" }
       - { label: "Email", name: "email", widget: "string" }
-      - label: "Réseaux sociaux"
-        name: "social"
-        widget: "object"
-        fields:
-          - { label: "LinkedIn", name: "linkedin", widget: "string" }
+
