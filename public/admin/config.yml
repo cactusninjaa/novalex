@@ -1,15 +1,75 @@
-collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "src/content/posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in frontmatter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
 backend:
   name: git-gateway
-  branch: main 
-media_folder: "src/assets/images" # Location where files will be stored in the repo
-public_folder: "src/assets/images" # The src attribute for uploaded medi
+  branch: main  # Change si nécessaire
+
+media_folder: "public/images/uploads"  # Où sont stockées les images
+public_folder: "/images/uploads"
+
+collections:
+  # ✅ Page d'accueil
+  - name: "homepage"
+    label: "Page d'accueil"
+    file: "content/homepage.md"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Image principale", name: "hero_image", widget: "image" }
+      - { label: "Texte d'introduction", name: "description", widget: "text" }
+      - label: "Réalisations mises en avant"
+        name: "featured_realisations"
+        widget: "relation"
+        collection: "realisations"
+        multiple: true
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
+      - label: "Engagements"
+        name: "engagements"
+        widget: "list"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+  # ✅ Liste des réalisations
+  - name: "realisations"
+    label: "Réalisations"
+    folder: "content/realisations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Image principale", name: "hero_image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Caractéristiques"
+        name: "caracteristiques"
+        widget: "list"
+        fields:
+          - { label: "Nom", name: "title", widget: "string" }
+          - { label: "Valeur", name: "value", widget: "string" }
+      - label: "Galerie d'images"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - { label: "Titre de la section", name: "title", widget: "string", required: false }
+          - { label: "Images", name: "images", widget: "list", fields: [{ label: "Image", name: "image", widget: "image" }] }
+
+  # ✅ Page listant toutes les réalisations
+  - name: "realisation_list"
+    label: "Page des réalisations"
+    file: "content/realisations.md"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Texte d'introduction", name: "description", widget: "text" }
+
+  # ✅ Configuration générale du site
+  - name: "config"
+    label: "Configuration du site"
+    file: "content/config.md"
+    fields:
+      - { label: "Adresse", name: "address", widget: "string" }
+      - { label: "Téléphone", name: "phone", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - label: "Réseaux sociaux"
+        name: "social"
+        widget: "object"
+        fields:
+          - { label: "LinkedIn", name: "linkedin", widget: "string" }

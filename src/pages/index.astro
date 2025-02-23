@@ -4,10 +4,11 @@ const posts = await getCollection('posts');
 ---
 
 <article>
-	{posts.map((post: { slug: string; data: { title: string }; body: string }) => (
-		<div data-key={post.slug}>
-			<h1>{post.data.title}</h1>
-			<div>{post.body}</div>
-		</div>
-	))}
+    {posts.map((post: { slug: string; data: { title: string; thumbnail: string }; body: string }) => (
+        <div data-key={post.slug}>
+            <h1>{post.data.title}</h1>
+            <img src={post.data.thumbnail} alt="">
+            <div>{post.body}</div>
+        </div>
+    ))}
 </article>
