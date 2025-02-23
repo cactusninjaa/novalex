@@ -1,5 +1,5 @@
 ---
-title: Bienvenue sur notre site
+title: "Bienvenue sur notre "
 date: 2025-02-16
 thumbnail: src/assets/images/thomas_s.jpg
 ---
