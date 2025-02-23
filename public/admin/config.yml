@@ -9,25 +9,28 @@ collections:
   # ✅ Page d'accueil
   - name: "homepage"
     label: "Page d'accueil"
-    file: "content/homepage.md"
-    fields:
-      - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Image principale", name: "hero_image", widget: "image" }
-      - { label: "Texte d'introduction", name: "description", widget: "text" }
-      - label: "Réalisations mises en avant"
-        name: "featured_realisations"
-        widget: "relation"
-        collection: "realisations"
-        multiple: true
-        search_fields: ["title"]
-        value_field: "title"
-        display_fields: ["title"]
-      - label: "Engagements"
-        name: "engagements"
-        widget: "list"
+    files:
+      - file: "content/homepage.md"
+        label: "Page d'accueil"
+        name: "homepage"
         fields:
           - { label: "Titre", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Image principale", name: "hero_image", widget: "image" }
+          - { label: "Texte d'introduction", name: "description", widget: "text" }
+          - label: "Réalisations mises en avant"
+            name: "featured_realisations"
+            widget: "relation"
+            collection: "realisations"
+            multiple: true
+            search_fields: ["title"]
+            value_field: "title"
+            display_fields: ["title"]
+          - label: "Engagements"
+            name: "engagements"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
 
   # ✅ Liste des réalisations
   - name: "realisations"
@@ -55,17 +58,22 @@ collections:
   # ✅ Page listant toutes les réalisations
   - name: "realisation_list"
     label: "Page des réalisations"
-    file: "content/realisations.md"
-    fields:
-      - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Texte d'introduction", name: "description", widget: "text" }
+    files:
+      - file: "content/realisations.md"
+        label: "Page des réalisations"
+        name: "realisation_list"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Texte d'introduction", name: "description", widget: "text" }
 
   # ✅ Configuration générale du site
   - name: "config"
     label: "Configuration du site"
-    file: "content/config.md"
-    fields:
-      - { label: "Adresse", name: "address", widget: "string" }
-      - { label: "Téléphone", name: "phone", widget: "string" }
-      - { label: "Email", name: "email", widget: "string" }
-
+    files:
+      - file: "content/config.md"
+        label: "Configuration du site"
+        name: "config"
+        fields:
+          - { label: "Adresse", name: "address", widget: "string" }
+          - { label: "Téléphone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
