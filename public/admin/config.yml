@@ -27,10 +27,6 @@ collections:
             display_fields: ["title"]
           - label: "Engagements"
             name: "engagements"
-            fields:
-              - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Image principale", name: "hero_image", widget: "image" }
-              - { label: "Description", name: "description", widget: "text" }
             widget: "list"
             fields:
               - { label: "Titre", name: "title", widget: "string" }
