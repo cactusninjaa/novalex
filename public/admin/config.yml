@@ -21,8 +21,8 @@ collections:
             name: "featured_realisations"
             widget: "object" 
             fields:
-              - { label: "Titre du bloc", name: "block_title", widget: "string" }
-              - { label: "Description du bloc", name: "block_description", widget: "text" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
               - label: "Sélection des réalisations"
                 name: "items"
                 widget: "relation"
@@ -36,14 +36,14 @@ collections:
             name: "engagements"
             widget: "object"  
             fields:
-              - { label: "Titre du bloc", name: "block_title", widget: "string" }
-              - { label: "Description du bloc", name: "block_description", widget: "text" }
+              - { label: "Titre", name: "block_title", widget: "string" }
+              - { label: "Description", name: "block_description", widget: "text" }
               - label: "Liste des engagements"
                 name: "items"
                 widget: "list"
                 fields:
-                  - { label: "Titre", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Titre", name: "block_title", widget: "string" }
+                  - { label: "Description", name: "block_description", widget: "text" }
           - label: "Expertises"
             name: "expertises"
             widget: "object"
@@ -53,8 +53,8 @@ collections:
                 name: "items"
                 widget: "list"
                 fields:
-                  - { label: "Titre", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Titre", name: "block_title", widget: "string" }
+                  - { label: "Description", name: "block_description", widget: "text" }
           - label: "Équipe"
             name: "equipe"
             widget: "object"
@@ -71,9 +71,9 @@ collections:
                 name: "items"
                 widget: "list"
                 fields:
-                  - { label: "Titre", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Titre", name: "block_title", widget: "string" }
+                  - { label: "Description", name: "block_description", widget: "text" }
+                  - { label: "Image", name: "block_image", widget: "image" }
 
   # ✅ Liste des réalisations
   - name: "realisations"
@@ -89,14 +89,14 @@ collections:
         name: "caracteristiques"
         widget: "list"
         fields:
-          - { label: "Nom", name: "title", widget: "string" }
-          - { label: "Valeur", name: "value", widget: "string" }
+          - { label: "Nom", name: "block_title", widget: "string" }
+          - { label: "Valeur", name: "block_value", widget: "string" }
       - label: "Galerie d'images"
         name: "gallery"
         widget: "list"
         fields:
-          - { label: "Titre de la section", name: "title", widget: "string", required: false }
-          - { label: "Images", name: "images", widget: "list", fields: [{ label: "Image", name: "image", widget: "image" }] }
+          - { label: "Titre de la section", name: "block_title", widget: "string", required: false }
+          - { label: "Images", name: "images", widget: "block_list", fields: [{ label: "Image", name: "image", widget: "image" }] }
 
   # ✅ Page listant toutes les réalisations
   - name: "realisation_list"

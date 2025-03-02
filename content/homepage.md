@@ -55,8 +55,7 @@ certifications:
       depuis plusieurs années, ce qui nous permet de mener à bien nos projets
       avec leur expertise et leur soutien.
     image: /images/uploads/image-1.png
-  - description: >
-      Avec une couverture décennale et responsabilité civile via MMA, notre
+  - description: Avec une couverture décennale et responsabilité civile via MMA, notre
       entreprise se distingue par une sinistralité très faible, garantissant
       ainsi la qualité et la sécurité de nos interventions.
     title: Assurance
