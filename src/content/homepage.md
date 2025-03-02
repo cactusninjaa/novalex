@@ -7,6 +7,7 @@ featured_realisations:
   - "projet-1"
   - "projet-2"
   - "projet-3"
+  - "projet-4"
 engagements:
   - title: "Respect du projet"
     description: "Nous nous engageons à respecter scrupuleusement votre cahier des charges."

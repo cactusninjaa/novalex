@@ -1,14 +1,56 @@
 ---
-import { getCollection } from 'astro:content';
-const posts = await getCollection('posts');
+import { remark } from 'remark';
+import html from 'remark-html';
+
+import Layout from '../layouts/Layout.astro';
+
+// Définition du type pour le frontmatter
+interface HomepageFrontmatter {
+  title: string;
+  hero_image: string;
+  description: string;
+  featured_realisations: string[];
+  engagements: { title: string; description: string }[];
+}
+
+// Chargement du Markdown avec typage
+const homepageFiles = import.meta.glob<{ frontmatter: HomepageFrontmatter; default: string }>('/src/content/homepage.md', { eager: true });
+const homepage = Object.values(homepageFiles)[0] as { frontmatter: HomepageFrontmatter; default: string };
+
+// Convertir le contenu Markdown en HTML
+const processedContent = await remark().use(html).process(homepage.default);
+const contentHtml = processedContent.toString();
 ---
 
-<article>
-    {posts.map((post: { slug: string; data: { title: string; thumbnail: string }; body: string }) => (
-        <div data-key={post.slug}>
-            <h1>{post.data.title}</h1>
-            <img src={post.data.thumbnail} alt="">
-            <div>{post.body}</div>
-        </div>
-    ))}
-</article>
+<Layout>
+    <section class="hero">
+        <img src={homepage.frontmatter.hero_image} alt={homepage.frontmatter.title} />
+        <h1>{homepage.frontmatter.title}</h1>
+        <p>{homepage.frontmatter.description}</p>
+    </section>
+
+    <section class="featured-realisations">
+        <h2>Nos Réalisations</h2>
+        <ul>
+        {homepage.frontmatter.featured_realisations.map((realisation) => (
+            <li>{realisation}</li>
+        ))}
+        </ul>
+    </section>
+
+    <section class="engagements">
+        <h2>Engagements</h2>
+        <ul>
+        {homepage.frontmatter.engagements.map((engagement) => (
+            <li>
+            <h3>{engagement.title}</h3>
+            <p>{engagement.description}</p>
+            </li>
+        ))}
+        </ul>
+    </section>
+
+    <section class="content">
+        <div set:html={contentHtml}></div>
+    </section>
+</Layout>
