@@ -1,56 +1,78 @@
-<!-- ---
-import { remark } from 'remark';
-import html from 'remark-html';
+---
+import { fetchContent } from '@astro/content'; // Pour récupérer du contenu
 
-import Layout from '../layouts/Layout.astro';
+const homepage = await fetchContent('content/homepage.md'); // Charger le fichier markdown
 
-// Définition du type pour le frontmatter
-interface HomepageFrontmatter {
-  title: string;
-  hero_image: string;
-  description: string;
-  featured_realisations: string[];
-  engagements: { title: string; description: string }[];
-}
-
-// Chargement du Markdown avec typage
-const homepageFiles = import.meta.glob<{ frontmatter: HomepageFrontmatter; default: string }>('/src/content/homepage.md', { eager: true });
-const homepage = Object.values(homepageFiles)[0] as { frontmatter: HomepageFrontmatter; default: string };
-
-// Convertir le contenu Markdown en HTML
-const processedContent = await remark().use(html).process(homepage.default);
-const contentHtml = processedContent.toString();
+const { title, hero_image, description, featured_realisations, engagements, expertises, equipe, certifications } = homepage;
 ---
 
-<Layout>
-    <section class="hero">
-        <img src={homepage.frontmatter.hero_image} alt={homepage.frontmatter.title} />
-        <h1>{homepage.frontmatter.title}</h1>
-        <p>{homepage.frontmatter.description}</p>
-    </section>
+<head>
+  <title>{title}</title>
+  <meta name="description" content={description} />
+</head>
 
-    <section class="featured-realisations">
-        <h2>Nos Réalisations</h2>
-        <ul>
-        {homepage.frontmatter.featured_realisations.map((realisation) => (
-            <li>{realisation}</li>
-        ))}
-        </ul>
-    </section>
+<main class="container mx-auto px-4">
+  <!-- Hero Section -->
+  <section class="text-center py-16">
+    <h1 class="text-4xl font-bold">{title}</h1>
+    <p class="mt-4 text-lg">{description}</p>
+    <img src={hero_image} alt="Image principale" class="mt-6 mx-auto w-full max-w-4xl rounded-lg shadow-md" />
+  </section>
 
-    <section class="engagements">
-        <h2>Engagements</h2>
-        <ul>
-        {homepage.frontmatter.engagements.map((engagement) => (
-            <li>
-            <h3>{engagement.title}</h3>
-            <p>{engagement.description}</p>
-            </li>
-        ))}
-        </ul>
-    </section>
+  <!-- Réalisations mises en avant -->
+  <section class="py-16">
+    <h2 class="text-3xl font-semibold">Réalisations mises en avant</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+      {featured_realisations.map((realisation) => (
+        <li class="p-4 bg-gray-100 rounded-lg shadow-md text-center">{realisation}</li>
+      ))}
+    </ul>
+  </section>
 
-    <section class="content">
-        <div set:html={contentHtml}></div>
-    </section>
-</Layout> -->
+  <!-- Engagements -->
+  <section class="py-16">
+    <h2 class="text-3xl font-semibold">Nos engagements</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
+      {engagements.map((item) => (
+        <li class="p-4 bg-white border-l-4 border-blue-500 rounded-md shadow-md">
+          <h3 class="font-bold">{item.title}</h3>
+          <p class="mt-2">{item.description}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Expertises -->
+  <section class="py-16">
+    <h2 class="text-3xl font-semibold">Nos expertises</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
+      {expertises.map((item) => (
+        <li class="p-4 bg-gray-100 rounded-md shadow-md">
+          <h3 class="font-bold">{item.title}</h3>
+          <p class="mt-2">{item.description}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Équipe -->
+  <section class="py-16 text-center">
+    <h2 class="text-3xl font-semibold">Notre équipe</h2>
+    <p class="text-lg mt-2">{equipe.description}</p>
+    <img src={equipe.image} alt="Équipe" class="mt-6 mx-auto w-full max-w-md rounded-lg shadow-md" />
+  </section>
+
+  <!-- Certifications et Assurances -->
+  <section class="py-16">
+    <h2 class="text-3xl font-semibold">Certifications et assurances</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      {certifications.map((item) => (
+        <li class="p-4 bg-white rounded-md shadow-md text-center">
+          <img src={item.image} alt={item.title} class="w-24 h-24 mx-auto mb-4" />
+          <h3 class="font-bold">{item.title}</h3>
+          <p class="mt-2">{item.description}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</main>

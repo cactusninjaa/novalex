@@ -10,7 +10,7 @@ collections:
   - name: "homepage"
     label: "Page d'accueil"
     files:
-      - file: "content/homepage.md"
+      - file: "src/content/homepage.md"
         label: "Page d'accueil"
         name: "homepage"
         fields:
@@ -78,7 +78,7 @@ collections:
   # ✅ Liste des réalisations
   - name: "realisations"
     label: "Réalisations"
-    folder: "content/realisations"
+    folder: "src/content/realisations"
     create: true
     slug: "{{slug}}"
     fields:
@@ -102,7 +102,7 @@ collections:
   - name: "realisation_list"
     label: "Page des réalisations"
     files:
-      - file: "content/realisations.md"
+      - file: "src/content/realisations.md"
         label: "Page des réalisations"
         name: "realisation_list"
         fields:
@@ -113,7 +113,7 @@ collections:
   - name: "config"
     label: "Configuration du site"
     files:
-      - file: "content/config.md"
+      - file: "src/content/config.md"
         label: "Configuration du site"
         name: "config"
         fields:
