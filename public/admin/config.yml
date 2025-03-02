@@ -16,7 +16,7 @@ collections:
         fields:
           - { label: "Titre", name: "title", widget: "string" }
           - { label: "Image principale", name: "hero_image", widget: "image" }
-          - { label: "Texte d'introduction", name: "description", widget: "text" }
+          - { label: "Description", name: "description", widget: "text" }
           - label: "Réalisations mises en avant"
             name: "featured_realisations"
             widget: "relation"
@@ -27,6 +27,10 @@ collections:
             display_fields: ["title"]
           - label: "Engagements"
             name: "engagements"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Image principale", name: "hero_image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text" }
             widget: "list"
             fields:
               - { label: "Titre", name: "title", widget: "string" }
@@ -39,6 +43,7 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
           - label: "Équipe"
             name: "equipe"
+            widget: "object"
             fields:
               - { label: "Nom", name: "name", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
