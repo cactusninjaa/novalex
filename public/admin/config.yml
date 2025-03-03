@@ -91,6 +91,15 @@ collections:
         fields:
           - { label: "Nom", name: "block_title", widget: "string" }
           - { label: "Valeur", name: "block_value", widget: "string" }
+        default:
+        - block_title: "Maitre d’ouvrage"
+          block_value: "Alexandre Stermane"
+        - block_title: "Adresse"
+          block_value: ""
+        - block_title: "Date"
+          block_value: "02/04/2025"
+        - block_title: "Spécificités techniques"
+          block_value: ""
       - label: "Galerie d'images"
         name: "gallery"
         widget: "list"

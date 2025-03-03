@@ -3,19 +3,20 @@ import { frontmatter as homepage } from '../content/homepage.md'
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import "../styles/global.css";
+import Hero from '../components/Hero.astro';
+
 ---
 
 <Layout>
   <main>
     <!-- Hero Section -->
     <Header />
-    <section class="flex flex-col md:flex-row md:h-screen items-center">
-      <div class="bg-[#212529] h-screen text-white w-full flex  flex-col justify-end px-4 md:px-16 py-8 md:py-16">
-        <h1 class="text-4xl font-bold max-w-md">{homepage.title}</h1>
-        <p class="mt-4 text-lg max-w-sm">{homepage.description}</p>
-      </div>
-      <img src={homepage.hero_image} alt="Image principale" class="w-full max-h-screen object-cover" />
-    </section>
+    <Hero 
+      title={homepage.title} 
+      description={homepage.description} 
+      hero_image={homepage.hero_image} 
+    />
+
 
     <!-- Réalisations mises en avant -->
     <section class="py-16 px-4 md:px-16 flex flex-col gap-6">

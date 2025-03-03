@@ -1,18 +1,58 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection, getEntryBySlug } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+
 // 1. Génére un nouveau chemin pour chaque entrée de collection
 export async function getStaticPaths() {
     const posts = await getCollection('realisations');
-    return posts.map((post: { slug: any; }) => ({
+    return posts.map((post) => ({
         params: { realisation: post.slug },
         props: { post },
     }));
 }
 
 // 2. Pour votre modèle, vous pouvez obtenir l'entrée directement à partir de la propriété
-const { post } = Astro.props;
-const { Content } = await render(post);
+const { realisation } = Astro.params;
+const post = await getEntryBySlug('realisations', realisation);
+console.log(post.data.gallery[0].images);
 ---
-
-<h1>{post.data.title}</h1>
-<Content />
+<Layout>
+    <main>
+      <!-- Hero Section -->
+      <Header />
+      <Hero 
+        title={post.data.title} 
+        description={post.data.description} 
+        hero_image={post.data.hero_image} 
+      />
+    </main>
+    <section class="py-16 px-4 md:px-16">
+        <h2 class="text-3xl font-semibold my-8">Caractéristiques</h2>
+        <div>
+            {post.data.caracteristiques.map((item: { title: string, value: string }) => (
+                <div class="flex gap-1 ">
+                    <p>{item.title} : </p>
+                    <p>{item.value}</p>
+                </div>
+            ))}
+          </div>
+    </section>
+    <section>
+        <h2 class="text-3xl font-semibold my-8">Galerie</h2>
+        
+        <!-- Parcours chaque "post" dans le tableau -->
+        {post.data.gallery.map((gallery: { title: string; images: any[]; }) => (
+            <div>
+                <h3 class="text-2xl font-semibold text-center my-4">{gallery.title}</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {gallery.images.map((image: { image: string | null | undefined; }) => (
+                    <img src={image.image} alt="Image de la galerie" class="w-full h-96 object-cover" />
+                ))}
+                </div>
+            </div>
+        ))}
+    </section>
+</Layout>

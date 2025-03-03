@@ -1,0 +1,14 @@
+---
+const { title, description, hero_image } = Astro.props;
+---
+
+<section class="flex flex-col md:flex-row md:h-screen items-center">
+  <div class="bg-[#212529] h-screen text-white w-full flex flex-col justify-end px-4 md:px-16 py-8 md:py-16">
+    <h1 class="text-4xl font-bold max-w-md">{title}</h1>
+    <p class="mt-4 text-lg max-w-sm">{description}</p>
+  </div>
+  
+  {hero_image ? (
+    <img src={hero_image} alt="Image principale" class="w-full max-h-screen object-cover" />
+  ) : null}
+</section>
