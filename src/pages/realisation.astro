@@ -18,7 +18,9 @@ console.log(realisations);
             <h2 class="text-2xl font-semibold">Nos réalisations</h2>
             <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
                 {realisations.map((realisation: any) => (
-                    <li class="p-4 bg-gray-100 rounded-lg shadow-md text-center">{realisation.data.title}</li>
+                    <a href={`/realisation/${realisation.slug}`}>
+                        <p>{realisation.slug}</p>
+                    </a>
                 ))}
             </ul>
         </section>

@@ -1,1 +1,38 @@
+---
+import { makeSvgComponent } from 'astro/assets/utils';
+import { frontmatter as config } from '../content/config.md'
+import Logo from './Logo.astro';
 
+import "../styles/global.css";
+---
+
+<footer>
+    <div class="bg-[#212529]">
+        <div class="flex-col w-full flex md:flex-row py-8 px-8 md:p-16  justify-between gap-8 md:items-center">
+            <div class="flex flex-col justify-between gap-4 text-white">
+                <div>
+                    <h3 class="font-bold text-lg">Contact</h3>
+                    <a href={`tel:${config.phone}`}>
+                        <p>{config.phone}</p>
+                    </a>
+                    <a href={`mailto:${config.email}`}>
+                        <p>{config.email}</p>
+                    </a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Légal</h3>
+                    <a href="/legal">Mentions légales</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">Adresse</h3>
+                    <a href={config.maps_link} target="_blank">
+                        <p>{config.address}</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <Logo />
+            </div>
+        </div>
+    </div>
+</footer>

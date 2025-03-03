@@ -36,8 +36,8 @@ collections:
             name: "engagements"
             widget: "object"  
             fields:
-              - { label: "Titre", name: "block_title", widget: "string" }
-              - { label: "Description", name: "block_description", widget: "text" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
               - label: "Liste des engagements"
                 name: "items"
                 widget: "list"
@@ -120,5 +120,7 @@ collections:
         name: "config"
         fields:
           - { label: "Adresse", name: "address", widget: "string" }
+          - { label: "Google maps", name: "maps_link", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
           - { label: "Téléphone", name: "phone", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }

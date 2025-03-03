@@ -13,8 +13,8 @@ featured_realisations:
     - "100 rue de varennes 3"
 
 engagements:
-  block_title: "Nos engagements"
-  block_description: "Nous nous engageons pour des chantiers plus propres et plus sûrs, tout en plaçant l’humain et l’insertion au cœur de nos actions."
+  title: "Nos engagements"
+  description: "Nous nous engageons pour des chantiers plus propres et plus sûrs, tout en plaçant l’humain et l’insertion au cœur de nos actions."
   items:
     - block_title: "Sécurité et propreté"
       block_description: "Nous veillons à garder nos chantiers organisés et sécurisés en assurant un nettoyage quotidien et une gestion rigoureuse des déchets."
