@@ -105,7 +105,7 @@ collections:
         widget: "list"
         fields:
           - { label: "Titre de la section", name: "block_title", widget: "string", required: false }
-          - { label: "Images", name: "images", widget: "block_list", fields: [{ label: "Image", name: "image", widget: "image" }] }
+          - { label: "Images", name: "images", widget: "list", fields: [{ label: "Image", name: "image", widget: "image" }] }
 
   # ✅ Page listant toutes les réalisations
   - name: "realisation_list"
