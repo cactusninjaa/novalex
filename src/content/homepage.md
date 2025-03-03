@@ -11,6 +11,7 @@ featured_realisations:
     bâtiment.
   items:
     - Construction d'immeuble
+    - Construction d'immeuble 2
 engagements:
   title: Nos engagements
   description: Nous nous engageons pour des chantiers plus propres et plus sûrs,
