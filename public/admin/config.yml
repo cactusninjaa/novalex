@@ -108,6 +108,8 @@ collections:
         fields:
           - { label: "Titre", name: "title", widget: "string" }
           - { label: "Texte d'introduction", name: "description", widget: "text" }
+          - { label: "Image principale", name: "hero_image", widget: "image" }
+
 
   # ✅ Configuration générale du site
   - name: "config"

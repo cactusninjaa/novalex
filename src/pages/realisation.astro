@@ -1,0 +1,26 @@
+---
+import { frontmatter as realisation } from '../content/realisation.md'
+import { getCollection } from "astro:content";
+import Layout from '../layouts/Layout.astro';
+
+const realisations = await getCollection("realisations");
+console.log(realisations);
+---
+
+<Layout>
+    <main class="container mx-auto px-4">
+        <section class="py-16">
+            <h1 class="text-3xl font-semibold">{realisation.title}</h1>
+            <p class="mt-4 text-lg">{realisation.description}</p>
+            <!-- <img :src={realisations.hero_image} alt=""> -->
+        </section>
+        <section class="py-16">
+            <h2 class="text-2xl font-semibold">Nos réalisations</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+                {realisations.map((realisation: any) => (
+                    <li class="p-4 bg-gray-100 rounded-lg shadow-md text-center">{realisation.data.title}</li>
+                ))}
+            </ul>
+        </section>
+    </main>
+</Layout>
