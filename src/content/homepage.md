@@ -10,7 +10,7 @@ featured_realisations:
     réalisations, témoins de notre expertise et de notre passion pour le
     bâtiment.
   items:
-    - 100 rue de Varennes
+    - Construction d'immeuble
 engagements:
   title: Nos engagements
   description: Nous nous engageons pour des chantiers plus propres et plus sûrs,
