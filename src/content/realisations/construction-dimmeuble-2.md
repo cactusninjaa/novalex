@@ -1,5 +1,5 @@
 ---
-title: Construction d'immeuble
+title: Construction d'immeuble 2
 hero_image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
 description: Réalisation d’un chantier comprenant la rénovation de la façade,
   l’aménagement des espaces intérieurs, ainsi que la mise à jour des
