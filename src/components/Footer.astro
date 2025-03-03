@@ -8,22 +8,24 @@ import "../styles/global.css";
 
 <footer>
     <div class="bg-[#212529]">
-        <div class="flex-col w-full flex md:flex-row py-8 px-8 md:p-16  justify-between gap-8 md:items-center">
-            <div class="flex flex-col justify-between gap-4 text-white">
-                <div>
+        <div class="flex-col w-full flex md:flex-row py-8 px-4 md:p-16  justify-between gap-8 md:items-center">
+            <div class="flex flex-col justify-between gap-6 text-white">
+                <div class="flex flex-col gap-4">
                     <h3 class="font-bold text-lg">Contact</h3>
-                    <a href={`tel:${config.phone}`}>
-                        <p>{config.phone}</p>
-                    </a>
-                    <a href={`mailto:${config.email}`}>
-                        <p>{config.email}</p>
-                    </a>
+                    <div>
+                        <a href={`tel:${config.phone}`}>
+                            <p>{config.phone}</p>
+                        </a>
+                        <a href={`mailto:${config.email}`}>
+                            <p>{config.email}</p>
+                        </a>
+                    </div>
                 </div>
-                <div>
+                <div class="flex flex-col gap-4">
                     <h3 class="font-bold text-lg">Légal</h3>
                     <a href="/legal">Mentions légales</a>
                 </div>
-                <div>
+                <div class="flex flex-col gap-4">
                     <h3 class="font-bold text-lg">Adresse</h3>
                     <a href={config.maps_link} target="_blank">
                         <p>{config.address}</p>

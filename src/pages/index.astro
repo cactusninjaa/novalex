@@ -1,74 +1,119 @@
 ---
 import { frontmatter as homepage } from '../content/homepage.md'
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 import "../styles/global.css";
-console.log(homepage);
-
-
 ---
 
 <Layout>
-  <main class="px-4">
+  <main>
     <!-- Hero Section -->
-    <section class="text-center py-16">
-      <h1 class="text-4xl font-bold">{homepage.title}</h1>
-      <p class="mt-4 text-lg">{homepage.description}</p>
-      <img src={homepage.hero_image} alt="Image principale" class="mt-6 mx-auto w-full max-w-4xl rounded-lg shadow-md" />
+    <Header />
+    <section class="flex flex-col md:flex-row md:h-screen items-center">
+      <div class="bg-[#212529] h-screen text-white w-full flex  flex-col justify-end px-4 md:px-16 py-8 md:py-16">
+        <h1 class="text-4xl font-bold max-w-md">{homepage.title}</h1>
+        <p class="mt-4 text-lg max-w-sm">{homepage.description}</p>
+      </div>
+      <img src={homepage.hero_image} alt="Image principale" class="w-full max-h-screen object-cover" />
     </section>
 
     <!-- Réalisations mises en avant -->
-    <section class="py-16">
-      <h2 class="text-3xl font-semibold">{homepage.featured_realisations.title}</h2>
-      <p>{homepage.featured_realisations.description}</p>
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+    <section class="py-16 px-4 md:px-16 flex flex-col gap-6">
+      <div>
+        <h2 class="text-3xl font-semibold">{homepage.featured_realisations.title}</h2>
+        <p class="mt-4 text-lg max-w-xl">{homepage.featured_realisations.description}</p>
+      </div>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {homepage.featured_realisations.items.map((realisation: any) => (
           <li class="p-4 bg-gray-100 rounded-lg shadow-md text-center">{realisation}</li>
         ))}
       </ul>
+      <button class="bg-[#212529] text-white py-2 px-4 rounded-lg">
+        <a href="/realisation">
+          Décourvrir 
+        </a>
+      </button>
     </section>
 
     <!-- Engagements -->
-    <section class="py-16">
-      <h2 class="text-3xl font-semibold">{homepage.engagements.title}</h2>
-      <p>{homepage.engagements.description}</p>
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
+    <section class="py-16 flex flex-col px-4 md:px-16">
+      <div>
+        <h2 class="text-3xl font-semibold">{homepage.engagements.title}</h2>
+        <p class="mt-4 text-lg max-w-sm">{homepage.engagements.description}</p>
+      </div>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-6 mt-6">
         {homepage.engagements.items.map((item: { block_title: string; block_description: string; }) => (
-          <li class="p-4 bg-white border-l-4 border-blue-500 rounded-md shadow-md">
+          <li class="p-4 bg-[#212529] rounded-3xl text-white p-8">
             <h3 class="font-bold">{item.block_title}</h3>
-            <p class="mt-2">{item.block_description}</p>
+            <p class="mt-2 max-w-lg">{item.block_description}</p>
           </li>
         ))}
       </ul>
     </section>
 
     <!-- Expertises -->
-    <section class="py-16">
-      <h2 class="text-3xl font-semibold">{homepage.expertises.title}</h2>
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
-        {homepage.expertises.items.map((item: { block_title: string; block_description: string; }) => (
-          <li class="p-4 bg-gray-100 rounded-md shadow-md">
-            <h3 class="font-bold">{item.block_title}</h3>
-            <p class="mt-2">{item.block_description}</p>
+    <section class="py-16 px-4 md:px-16">
+      <h2 class="text-2xl font-semibold mb-4">{homepage.expertises.title}</h2>
+      <ul class="divide-y divide-gray-300">
+        {homepage.expertises.items.map((item: { block_title: string; block_description: string; }, index: number) => (
+          <li class="py-6" key={index}>
+            <button class="flex justify-between items-center w-full text-left" id={`button-${index}`}>
+              <h2 class="text-lg font-bold">{item.block_title}</h2>
+              <span id={`arrow-${index}`} class="text-gray-400 text-xl transition-transform duration-300">↑</span>
+            </button>
+            <p id={`desc-${index}`} class="text-gray-600 text-sm mt-2 max-w-md hidden">{item.block_description}</p>
           </li>
         ))}
       </ul>
     </section>
+    
+    <script>
+      // Attendre que le DOM soit complètement chargé
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sélectionner tous les boutons par leur ID
+        const buttons = document.querySelectorAll("button[id^='button-']");
+        
+        buttons.forEach((button, index) => {
+          button.addEventListener("click", function() {
+            toggleItem(index);
+          });
+        });
+      });
+    
+      // Fonction pour afficher/masquer la description et tourner la flèche
+      function toggleItem(index: number) {
+        const desc = document.getElementById(`desc-${index}`);
+        const arrow = document.getElementById(`arrow-${index}`);
+        
+        if (!desc || !arrow) {
+          console.error("L'élément n'a pas été trouvé !");
+          return;
+        }
+        
+        // Toggle la classe hidden pour la description
+        desc.classList.toggle("hidden");
+        
+        // Toggle la classe rotate-180 pour la flèche
+        arrow.classList.toggle("rotate-180");
+      }
+    </script>
+    
 
     <!-- Équipe -->
-    <section class="py-16 px-4 md:px-8 flex flex-col md:flex-row justify-between  gap-4">
-      <div class="w-full">
+    <section class="py-16 px-4 md:px-16 flex flex-col md:flex-row justify-between gap-6">
+      <div class="w-full flex flex-col gap-6">
         <h2 class="text-3xl font-semibold">{homepage.equipe.title}</h2>
-        <p class="text-lg mt-2 max-w-lg">{homepage.equipe.description}</p>
+        <p class="text-lg max-w-lg">{homepage.equipe.description}</p>
       </div>
       <img src={homepage.equipe.image} alt="Équipe" class="w-full aspect-16/9 rounded-3xl" />
     </section>
 
     <!-- Certifications et Assurances -->
-    <section class="py-16 px-4 md:px-8">
+    <section class="py-16 px-4 md:px-16 flex flex-col gap-6">
       <h2 class="text-3xl font-semibold">{homepage.certifications.title}</h2>
       <ul class="flex flex-col lg:flex-row align-justify gap-6">
         {homepage.certifications.items.map((item: { block_image: string | null | undefined; block_title: string; block_description: string; }) => (
-          <li class="p-6 md:p-8 text-white rounded-3xl bg-[#212529]">
+          <li class="p-6 md:p-8 flex flex-col justify-between text-white gap-4 rounded-3xl bg-[#212529]">
             <img src={item.block_image} alt={item.block_title} class="w-full min-h-24 max-h-36 object-cover rounded-3xl" />
             <p class="mt-2">{item.block_description}</p>
           </li>
