@@ -1,6 +1,6 @@
 ---
 title: Novalex, quarante ans d’engagement
-hero_image: /images/uploads/image-de-thomas-sauvage-1-.jpeg
+hero_image: /images/uploads/rue-de-varenne-2011.jpg
 description: Expert du gros œuvre en Île-de-France, à travers des chantiers
   durables et respectueux de l’environnement, nous façonnons demain.
 featured_realisations:
