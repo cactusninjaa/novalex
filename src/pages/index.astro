@@ -18,9 +18,7 @@ const realisations = await getCollection("realisations");
 ---
 
 <Layout>
-  <main>
-    <div class="flex gap-12 md:gap-16 flex-col justify-center items-center">
-      <Header />
+  <div class="flex gap-12 md:gap-16 flex-col justify-center items-center">
       <Hero 
         title={homepage.title} 
         description={homepage.description} 
@@ -121,7 +119,6 @@ const realisations = await getCollection("realisations");
 
       </div>
     </div>
-  </main>
 </Layout>
 
 <script>

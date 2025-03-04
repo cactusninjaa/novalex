@@ -1,7 +1,6 @@
 ---
 import { getCollection, getEntryBySlug } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
 import Hero from '../../components/Hero.astro';
 
 // 1. Génére un nouveau chemin pour chaque entrée de collection
@@ -19,10 +18,8 @@ const post = await getEntryBySlug('realisations', realisation);
 console.log(post.data.caracteristiques);
 ---
 <Layout>
-    <main>
-        <div class="flex gap-12 md:gap-16 flex-col justify-center items-center">
+    <div class="flex gap-12 md:gap-16 flex-col justify-center items-center">
         <!-- Hero Section -->
-        <Header />
         <Hero 
             title={post.data.title} 
             description={post.data.description} 
@@ -53,7 +50,5 @@ console.log(post.data.caracteristiques);
                 ))}
             </section>
         </div>
-        </div>
-    </main>
-    
+    </div>
 </Layout>
