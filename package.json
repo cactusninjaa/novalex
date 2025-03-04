@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.5",
     "amqplib": "^0.10.5",
     "decap-cms-app": "^3.6.2",
     "preact": "^10.26.4",

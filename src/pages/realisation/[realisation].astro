@@ -30,20 +30,19 @@ console.log(post.data.caracteristiques);
         />
         <div class="max-w-7xl w-full">
             <section class="py-16 px-4">
-                <h2 class="text-3xl font-semibold my-8">Caractéristiques</h2>
+                <h2 class="text-3xl my-8">Caractéristiques</h2>
                 <div class="flex flex-col gap-4">
                     {post.data.caracteristiques.map((item: { block_title: string, block_value: string }) => (
-                        <p class="max-w-2xl"><span class="font-medium">{item.block_title}</span> : {item.block_value}</p>
+                        <p class="max-w-2xl"><span class="font-semibold">{item.block_title}</span> : {item.block_value}</p>
                     ))}
                 </div>
             </section>
             <section class="pb-16 px-4">
-                <h2 class="text-3xl font-semibold my-8">Galerie</h2>
-                
+                <h2 class="text-3xl my-8">Galerie</h2>
                 <!-- Parcours chaque "post" dans le tableau -->
                 {post.data.gallery.map((gallery: { block_title: string; images: any[]; }) => (
                     <div>
-                        <h3 class="text-2xl font-semibold my-4">{gallery.block_title}</h3>
+                        <h3 class="text-2xl my-4">{gallery.block_title}</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {gallery.images.map((image: { image: string | null | undefined; }) => (
                             <img src={image.image} alt="Image de la galerie" class="w-full aspect-1/1 rounded-3xl object-cover" />

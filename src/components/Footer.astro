@@ -11,24 +11,26 @@ import "../styles/global.css";
         <div class="flex-col w-full flex md:flex-row py-8 px-4 md:py-16 max-w-7xl justify-between gap-8 md:items-center">
             <div class="flex flex-col justify-between gap-6 text-white">
                 <div class="flex flex-col gap-4">
-                    <h3 class="font-bold text-lg">Contact</h3>
+                    <h3 class="font-light text-2xl">Contact</h3>
                     <div>
                         <a href={`tel:${config.phone}`}>
-                            <p>{config.phone}</p>
+                            <p class="text-lg">{config.phone}</p>
                         </a>
                         <a href={`mailto:${config.email}`}>
-                            <p>{config.email}</p>
+                            <p class="text-lg">{config.email}</p>
                         </a>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <h3 class="font-bold text-lg">Légal</h3>
-                    <a href="/legal">Mentions légales</a>
+                    <h3 class="font-light text-2xl">Légal</h3>
+                    <a href="/legal">
+                        <p class="text-lg">Mentions légales</p>
+                    </a>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <h3 class="font-bold text-lg">Adresse</h3>
+                    <h3 class="font-light text-2xl">Adresse</h3>
                     <a href={config.maps_link} target="_blank">
-                        <p>{config.address}</p>
+                        <p class="text-lg">{config.address}</p>
                     </a>
                 </div>
             </div>
