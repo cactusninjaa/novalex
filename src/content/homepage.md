@@ -69,7 +69,7 @@ certifications:
       block_description: Nous sommes également certifiés par ENEDIS et collaborons
         avec eux depuis plusieurs années, ce qui nous permet de mener à bien nos
         projets avec leur expertise et leur soutien.
-      block_image: /images/uploads/logo-enedis.png
+      block_image: /images/uploads/logoenedis.png
     - block_title: Assurance
       block_description: Avec une couverture décennale et responsabilité civile via
         MMA, notre entreprise se distingue par une sinistralité très faible,
