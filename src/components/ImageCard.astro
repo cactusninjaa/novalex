@@ -16,12 +16,11 @@ const { realisation } = Astro.props;
     <div class="relative w-full aspect-1/1 rounded-3xl overflow-hidden">
         <div 
         class="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-90"
-        style={`background-image: url(${realisation.data.hero_image});`}
+        style={`background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(${realisation.data.hero_image}) lightgray -263.832px -82.609px / 200.348% 125.418% no-repeat;`}
         ></div>
 
-        <div class="relative z-10 w-full h-full flex items-end px-4 py-2">
-        <p class="text-white text-xl md:text-2xl">{realisation.data.title}</p>
+        <div class="relative z-10 w-full h-full flex items-end p-6">
+            <p class="text-white text-xl md:text-2xl">{realisation.data.title}</p>
         </div>
     </div>
 </a>
-
