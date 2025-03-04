@@ -96,12 +96,14 @@ const realisations = await getCollection("realisations");
         </section>
 
         <!-- Équipe -->
-        <section class="py-16 px-4 flex flex-col md:flex-row justify-between gap-6">
+        <section class="py-16 px-4 grid grid-cols-1 md:grid-cols-2 justify-between gap-6">
           <div class="w-full flex flex-col gap-6">
             <h2 class="text-3xl">{homepage.equipe.title}</h2>
             <p class="text-lg max-w-lg">{homepage.equipe.description}</p>
           </div>
-          <img src={homepage.equipe.image} alt="Équipe" class="w-full aspect-16/9 rounded-3xl" />
+          <div>
+            <img src={homepage.equipe.image} alt="Équipe" class="w-full aspect-16/9 rounded-3xl" />
+          </div>
         </section>
 
         <!-- Certifications et Assurances -->

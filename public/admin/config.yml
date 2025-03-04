@@ -111,7 +111,7 @@ collections:
   - name: "realisation_list"
     label: "Page des réalisations"
     files:
-      - file: "src/content/realisations.md"
+      - file: "src/content/realisation.md"
         label: "Page des réalisations"
         name: "realisation_list"
         fields:
