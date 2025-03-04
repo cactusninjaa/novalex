@@ -1,5 +1,5 @@
 ---
-title: Quarante ans d’engagement
+title: Novalex, quarante ans d’engagement
 hero_image: /images/uploads/image-de-thomas-sauvage-1-.jpeg
 description: Expert du gros œuvre en Île-de-France, à travers des chantiers
   durables et respectueux de l’environnement, nous façonnons demain.
