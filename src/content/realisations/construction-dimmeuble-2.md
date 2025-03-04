@@ -1,6 +1,6 @@
 ---
-title: Construction d'immeuble 2
-hero_image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
+title: Réhabilitation immeuble
+hero_image: /images/uploads/100-rue-de-varenne-echafaudage-parapluie.jpg
 description: Réalisation d’un chantier comprenant la rénovation de la façade,
   l’aménagement des espaces intérieurs, ainsi que la mise à jour des
   infrastructures techniques, dans le respect des normes environnementales et de
@@ -20,14 +20,14 @@ caracteristiques:
 gallery:
   - block_title: Avant
     images:
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
+      - image: /images/uploads/100-rue-de-varenne-1.jpg
+      - image: /images/uploads/100-rue-de-varenne-2.jpg
+      - image: /images/uploads/100-rue-de-varenne-copie-2.jpg
   - block_title: Après
     images:
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
+      - image: /images/uploads/100-rue-de-varenne-copie-3.jpg
+      - image: /images/uploads/rue-de-varenne.jpg
+      - image: /images/uploads/100-rue-de-varenne-façade-rue.jpg
+      - image: /images/uploads/100-rue-de-varenne-jardin.jpeg
+      - image: /images/uploads/image-de-thomas-sauvage-1-.jpeg
 ---
