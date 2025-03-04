@@ -1,6 +1,6 @@
 ---
 title: Quarante ans d’engagement
-hero_image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
+hero_image: /images/uploads/image-de-thomas-sauvage-1-.jpeg
 description: Expert du gros œuvre en Île-de-France, à travers des chantiers
   durables et respectueux de l’environnement, nous façonnons demain.
 featured_realisations:
@@ -37,8 +37,8 @@ expertises:
   title: Domaines expertises
   items:
     - block_title: Construction
-      block_description: Experts en construction neuve, nous bâtissons maisons,
-        bureaux, bâtiments industriels et copropriétés avec exigence et
+      block_description: Grande expérience en construction neuve, nous bâtissons
+        maisons, bureaux, bâtiments industriels et copropriétés avec exigence et
         savoir-faire.
     - block_title: Réhabilitation et valorisation
       block_description: Nous redonnons vie à vos bâtiments en conciliant performance
@@ -56,7 +56,7 @@ equipe:
   description: Nos équipes sont formées et qualifiées pour intervenir en toute
     sécurité, que ce soit sur les voies ferrées, en électricité ou à la manœuvre
     d’engins comme les mini-pelles, bulldozers et nacelles.
-  image: /images/uploads/image-23.png
+  image: /images/uploads/pb080875.jpg
 certifications:
   title: Certification et assurances
   items:
@@ -64,15 +64,15 @@ certifications:
       block_description: Nous sommes certifiés Qualibat dans divers domaines notamment
         la maçonnerie en béton armé haute technicité, le terrassement, la
         plâtrerie, les canalisations d’assainissement et la démolition.
-      block_image: /images/uploads/image.png
+      block_image: /images/uploads/logo-qualibat.png
     - block_title: Enedis
       block_description: Nous sommes également certifiés par ENEDIS et collaborons
         avec eux depuis plusieurs années, ce qui nous permet de mener à bien nos
         projets avec leur expertise et leur soutien.
-      block_image: /images/uploads/image-1.png
+      block_image: /images/uploads/logo-enedis.png
     - block_title: Assurance
       block_description: Avec une couverture décennale et responsabilité civile via
         MMA, notre entreprise se distingue par une sinistralité très faible,
         garantissant ainsi la qualité et la sécurité de nos interventions.
-      block_image: /images/uploads/image-2.png
+      block_image: /images/uploads/logo-mma.jpg
 ---
