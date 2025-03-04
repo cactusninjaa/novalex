@@ -1,6 +1,6 @@
 ---
 title: Construction d'immeuble
-hero_image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
+hero_image: /images/uploads/img_2336.jpg
 description: Réalisation d’un chantier comprenant la rénovation de la façade,
   l’aménagement des espaces intérieurs, ainsi que la mise à jour des
   infrastructures techniques, dans le respect des normes environnementales et de
@@ -9,23 +9,20 @@ caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Alexandre Stermane
   - block_title: Adresse
-    block_value: 100 rue de varenne
+    block_value: 16 place Denfert Rocheraud
   - block_title: Date
-    block_value: 02/04/2025
+    block_value: 29/10/2013
   - block_title: Spécificités techniques
-    block_value: Réalisation d’un chantier comprenant la rénovation de la façade,
-      l’aménagement des espaces intérieurs, ainsi que la mise à jour des
-      infrastructures techniques, dans le respect des normes environnementales
-      et de sécurité.
+    block_value: Construction d'un immeuble avec façade en verre
 gallery:
-  - block_title: 
+  - block_title: null
     images:
+      - image: /images/uploads/16-place-denfert-1.jpg
+      - image: /images/uploads/16-place-denfert-2.jpg
+      - image: /images/uploads/16-place-denfert-3.jpg
+      - image: /images/uploads/16-place-denfert-façade-arrière-avant-pose-persienne-.jpg
+      - image: /images/uploads/16-place-denfert-rochereau.jpg
       - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
+      - image: /images/uploads/maison-14-ext2.jpg
+      - image: /images/uploads/maison-14-terrasse.jpg
 ---
