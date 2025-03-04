@@ -23,8 +23,10 @@ gallery:
       - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
       - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
       - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
+      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
   - block_title: Après
     images:
+      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
       - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
       - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
       - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg

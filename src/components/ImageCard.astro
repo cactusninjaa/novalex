@@ -1,0 +1,27 @@
+---
+interface Props {
+    realisation: {
+        slug: string;
+        data: {
+        title: string;
+        hero_image: string;
+        };
+    };
+}
+
+const { realisation } = Astro.props;
+---
+
+<a href={`/realisation/${realisation.slug}`} class="block">
+    <div class="relative w-full aspect-1/1 rounded-3xl overflow-hidden">
+        <div 
+        class="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-90"
+        style={`background-image: url(${realisation.data.hero_image});`}
+        ></div>
+
+        <div class="relative z-10 w-full h-full flex items-end px-4 py-2">
+        <p class="text-white text-lg font-bold">{realisation.data.title}</p>
+        </div>
+    </div>
+</a>
+

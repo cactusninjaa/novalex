@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Header from '../components/Header.astro';
+import ImageCard from '../components/ImageCard.astro';
 
 const realisations = await getCollection("realisations");
 console.log(realisations);
@@ -16,23 +17,16 @@ console.log(realisations);
             title={realisation.title} 
             description={realisation.description} 
         />
-        <section class="py-16">
-            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-16 px-4 gap-6">
-                {realisations.map((realisation: any) => (
-                    <a href={`/realisation/${realisation.slug}`}>
-                        <div class="relative w-full h-96 rounded-3xl overflow-hidden">
-                        <div 
-                            style={`background-image: url(${realisation.data.hero_image});`} 
-                            class="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-90"
-                        ></div>
-
-                        <div class="relative z-10 w-full h-full flex items-end px-4 py-2">
-                            <p class="text-white text-lg font-bold">{realisation.data.title}</p>
-                        </div>
-                        </div>
-                    </a>
-                ))}
-            </ul>
+        <section class="py-16 flex items-center justify-center">
+            <div class="max-w-7xl w-full">
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-6">
+                    {realisations.map((realisation: any) => (
+                        <li key={realisation.slug}>
+                            <ImageCard realisation={realisation} />
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </section>
     </main>
 </Layout>

@@ -20,37 +20,40 @@ console.log(post.data.caracteristiques);
 ---
 <Layout>
     <main>
-      <!-- Hero Section -->
-      <Header />
-      <Hero 
-        title={post.data.title} 
-        description={post.data.description} 
-        hero_image={post.data.hero_image} 
-      />
-    </main>
-    <section class="py-16 px-4 md:px-16">
-        <h2 class="text-3xl font-semibold my-8">Caractéristiques</h2>
-        <div>
-            {post.data.caracteristiques.map((item: { block_title: string, block_value: string }) => (
-                <div class="">
-                    <p>{item.block_title} : {item.block_value}</p>
+        <div class="flex gap-12 md:gap-16 flex-col justify-center items-center">
+        <!-- Hero Section -->
+        <Header />
+        <Hero 
+            title={post.data.title} 
+            description={post.data.description} 
+            hero_image={post.data.hero_image} 
+        />
+        <div class="max-w-7xl w-full">
+            <section class="py-16 px-4">
+                <h2 class="text-3xl font-semibold my-8">Caractéristiques</h2>
+                <div class="flex flex-col gap-4">
+                    {post.data.caracteristiques.map((item: { block_title: string, block_value: string }) => (
+                        <p class="max-w-2xl"><span class="font-medium">{item.block_title}</span> : {item.block_value}</p>
+                    ))}
                 </div>
-            ))}
-          </div>
-    </section>
-    <section>
-        <h2 class="text-3xl font-semibold my-8">Galerie</h2>
-        
-        <!-- Parcours chaque "post" dans le tableau -->
-        {post.data.gallery.map((gallery: { block_title: string; images: any[]; }) => (
-            <div>
-                <h3 class="text-2xl font-semibold text-center my-4">{gallery.block_title}</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {gallery.images.map((image: { image: string | null | undefined; }) => (
-                    <img src={image.image} alt="Image de la galerie" class="w-full h-96 object-cover" />
+            </section>
+            <section class="pb-16 px-4">
+                <h2 class="text-3xl font-semibold my-8">Galerie</h2>
+                
+                <!-- Parcours chaque "post" dans le tableau -->
+                {post.data.gallery.map((gallery: { block_title: string; images: any[]; }) => (
+                    <div>
+                        <h3 class="text-2xl font-semibold my-4">{gallery.block_title}</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {gallery.images.map((image: { image: string | null | undefined; }) => (
+                            <img src={image.image} alt="Image de la galerie" class="w-full aspect-1/1 rounded-3xl object-cover" />
+                        ))}
+                        </div>
+                    </div>
                 ))}
-                </div>
-            </div>
-        ))}
-    </section>
+            </section>
+        </div>
+        </div>
+    </main>
+    
 </Layout>
