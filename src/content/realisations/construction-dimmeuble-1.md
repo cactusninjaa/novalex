@@ -22,7 +22,6 @@ gallery:
       - image: /images/uploads/16-place-denfert-3.jpg
       - image: /images/uploads/16-place-denfert-façade-arrière-avant-pose-persienne-.jpg
       - image: /images/uploads/16-place-denfert-rochereau.jpg
-      - image: /images/uploads/image-de-thomas-sauvage-2-.jpeg
       - image: /images/uploads/maison-14-ext2.jpg
       - image: /images/uploads/maison-14-terrasse.jpg
 ---
