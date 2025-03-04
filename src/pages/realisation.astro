@@ -1,5 +1,5 @@
 ---
-import { frontmatter as realisation } from '../content/realisation.md'
+import { frontmatter as realisation } from '../content/realisations.md'
 import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
@@ -7,7 +7,6 @@ import Header from '../components/Header.astro';
 import ImageCard from '../components/ImageCard.astro';
 
 const realisations = await getCollection("realisations");
-console.log(realisations);
 ---
 
 <Layout>
@@ -16,6 +15,7 @@ console.log(realisations);
         <Hero 
             title={realisation.title} 
             description={realisation.description} 
+            hero_image={realisation.hero_image}
         />
         <section class="py-16 flex items-center justify-center">
             <div class="max-w-7xl w-full">

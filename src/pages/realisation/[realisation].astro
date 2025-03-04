@@ -33,12 +33,13 @@ console.log(post.data.caracteristiques);
                 <h2 class="text-3xl my-8">Caractéristiques</h2>
                 <div class="flex flex-col gap-4">
                     {post.data.caracteristiques.map((item: { block_title: string, block_value: string }) => (
-                        <p class="max-w-2xl"><span class="font-semibold">{item.block_title}</span> : {item.block_value}</p>
+                        <p class="max-w-2xl"><span class="font-semidbold">{item.block_title}</span> : {item.block_value}</p>
                     ))}
                 </div>
             </section>
             <section class="pb-16 px-4">
                 <h2 class="text-3xl my-8">Galerie</h2>
+                
                 <!-- Parcours chaque "post" dans le tableau -->
                 {post.data.gallery.map((gallery: { block_title: string; images: any[]; }) => (
                     <div>
