@@ -45,9 +45,9 @@ expertises:
         bâtiment. Nous garantissons des ouvrages durables, réalisés avec
         précision.
     - block_title: Construction
-      block_description: Grande expérience en construction neuve, nous bâtissons
-        maisons, bureaux, bâtiments industriels, hôtels, maison de santés et
-        restaurants avec exigence et savoir-faire.
+      block_description: Nous possédons une grande expérience en construction neuve,
+        nous bâtissons maisons, bureaux, bâtiments industriels, hôtels, maison
+        de santés et restaurants avec exigence et savoir-faire.
     - block_title: Autre
       block_description: Du marché public aux projets privés, nous intervenons sur les
         bureaux, bâtiments industriels et copropriétés, en construction comme en
