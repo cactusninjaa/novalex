@@ -109,7 +109,7 @@ const realisations = await getCollection("realisations");
           <h2 class="text-3xl">{homepage.certifications.title}</h2>
           <ul class="flex flex-col lg:flex-row align-justify gap-6">
             {homepage.certifications.items.map((item: { block_image: string | null | undefined; block_title: string; block_description: string; }) => (
-              <li class="p-6 md:p-8 flex flex-col justify-between text-white gap-4 rounded-3xl bg-[#212529]">
+              <li class="p-6 md:p-8 w-full flex flex-col justify-between text-white gap-4 rounded-3xl bg-[#212529]">
                 <img src={item.block_image} alt={item.block_title} class="w-full h-full min-h-24 max-h-36 object-cover rounded-3xl" />
                 <p class="mt-2 text-lg">{item.block_description}</p>
               </li>
