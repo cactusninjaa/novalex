@@ -1,6 +1,6 @@
 ---
 title: Construction d'immeuble HQE
-hero_image: /images/uploads/img_2336.jpg
+hero_image: /images/uploads/maison-14-ext2.jpg
 description: Réalisation d’un chantier comprenant la rénovation de la façade,
   l’aménagement des espaces intérieurs, ainsi que la mise à jour des
   infrastructures techniques, dans le respect des normes environnementales et de
