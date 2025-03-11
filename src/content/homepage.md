@@ -1,8 +1,9 @@
 ---
 title: Novalex, quarante ans d’engagement
 hero_image: /images/uploads/rue-de-varenne-2011.jpg
-description: Expert du gros œuvre en Île-de-France, à travers des chantiers
-  durables et respectueux de l’environnement, nous façonnons demain.
+description: À travers une haute maîtrise technique du gros œuvre, nous
+  bâtissons l’avenir avec des chantiers respectueux de l’environnement et
+  durables.
 featured_realisations:
   title: Nos réalisations
   description: À travers nos chantiers, nous façonnons des ouvrages durables,
@@ -36,21 +37,21 @@ engagements:
 expertises:
   title: Domaines expertises
   items:
-    - block_title: Construction
-      block_description: Grande expérience en construction neuve, nous bâtissons
-        maisons, bureaux, bâtiments industriels et copropriétés avec exigence et
-        savoir-faire.
     - block_title: Réhabilitation et valorisation
-      block_description: Nous redonnons vie à vos bâtiments en conciliant performance
-        énergétique et respect de l’architecture, tout en maîtrisant vos coûts.
+      block_description: Nous préservons le patrimoine, en insufflant une nouvelle vie
+        à vos bâtiments tout en maîtrisant les coûts.
     - block_title: Gros oeuvre
       block_description: Le gros œuvre façonne l’identité et la solidité d’un
         bâtiment. Nous garantissons des ouvrages durables, réalisés avec
         précision.
+    - block_title: Construction
+      block_description: Grande expérience en construction neuve, nous bâtissons
+        maisons, bureaux, bâtiments industriels, hôtels, maison de santés et
+        restaurants avec exigence et savoir-faire.
     - block_title: Autre
-      block_description: Du marché public au projet privé, nous intervenons sur des
-        bureaux, des bâtiments industriels et des copropriétés en construction
-        comme en rénovation.
+      block_description: Du marché public aux projets privés, nous intervenons sur les
+        bureaux, bâtiments industriels et copropriétés, en construction comme en
+        rénovation, tout en préservant les bâtiments en péril.
 equipe:
   title: Équipes
   description: Nos équipes sont formées et qualifiées pour intervenir en toute
@@ -62,8 +63,9 @@ certifications:
   items:
     - block_title: Qualibat
       block_description: Nous sommes certifiés Qualibat dans divers domaines notamment
-        la maçonnerie en béton armé haute technicité, le terrassement, la
-        plâtrerie, les canalisations d’assainissement et la démolition.
+        la maçonnerie en béton armé technicité confirmé, le terrassement, la
+        plâtrerie, les canalisations d’assainissement, la démolition, le sciage
+        et le carottage.
       block_image: /images/uploads/logo-qualibat.png
     - block_title: Enedis
       block_description: Nous sommes également certifiés par ENEDIS et collaborons
