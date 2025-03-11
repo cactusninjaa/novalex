@@ -7,7 +7,7 @@ description: Réalisation d’un chantier comprenant la rénovation de la façad
   sécurité.
 caracteristiques:
   - block_title: Maitre d’ouvrage
-    block_value: Alexandre Stermane
+    block_value: Novalex
   - block_title: Adresse
     block_value: 100 rue de varenne
   - block_title: Date
