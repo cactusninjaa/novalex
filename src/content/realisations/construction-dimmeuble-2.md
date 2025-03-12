@@ -20,6 +20,7 @@ caracteristiques:
 gallery:
   - block_title: Avant
     images:
+      - image: /images/uploads/image-agrandie-et-améliorée-1-.jpeg
       - image: /images/uploads/100-rue-de-varenne-1.jpg
       - image: /images/uploads/100-rue-de-varenne-2.jpg
       - image: /images/uploads/100-rue-de-varenne-copie-2.jpg
