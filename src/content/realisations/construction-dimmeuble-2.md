@@ -21,14 +21,9 @@ gallery:
   - block_title: Avant
     images:
       - image: /images/uploads/image-agrandie-et-améliorée-1-.jpeg
-      - image: /images/uploads/100-rue-de-varenne-1.jpg
       - image: /images/uploads/100-rue-de-varenne-2.jpg
-      - image: /images/uploads/100-rue-de-varenne-copie-2.jpg
   - block_title: Après
     images:
-      - image: /images/uploads/100-rue-de-varenne-copie-3.jpg
-      - image: /images/uploads/rue-de-varenne.jpg
       - image: /images/uploads/100-rue-de-varenne-façade-rue.jpg
-      - image: /images/uploads/100-rue-de-varenne-jardin.jpeg
       - image: /images/uploads/image-de-thomas-sauvage-1-.jpeg
 ---
