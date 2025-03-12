@@ -1,5 +1,7 @@
 ---
-const { title, description, hero_image } = Astro.props;
+
+const { title, description, hero_image_before, hero_image_after } = Astro.props;
+
 ---
 
 <div class="flex flex-col w-full bg-[#212529] md:grid md:grid-cols-2 md:h-screen items-center">
@@ -12,9 +14,144 @@ const { title, description, hero_image } = Astro.props;
   <div class="h-screen text-white w-full max-w-7xl flex flex-col justify-end">
   </div>
   
-  {hero_image ? (
-    <div class="w-full">
-      <img src={hero_image} alt="Image principale" class="md:h-screen w-full object-cover" />
+  <div class="w-full relative h-screen">
+    <div id="comparison-container" class="w-full h-full relative overflow-hidden">
+      <!-- Image Avant -->
+      <div class="w-full h-full absolute top-0 left-0">
+        <img src={hero_image_before} alt="Image avant" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Image Après (visible partiellement) -->
+      <div id="image-after" class="w-full h-full absolute top-0 left-0 overflow-hidden">
+        <img src={hero_image_after} alt="Image après" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Barre de séparation (adaptative selon le format) -->
+      <div id="slider-handle" class="absolute md:w-1 md:h-full h-1 w-full bg-white md:cursor-ew-resize cursor-row-resize flex items-center justify-center z-10">
+        <div class="h-6 w-6 rounded-full bg-white flex items-center justify-center">
+          <div class="flex md:flex-row flex-col">
+            <!-- Flèches desktop (gauche/droite) -->
+            <svg class="w-4 h-4 md:block hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <svg class="w-4 h-4 md:block hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <!-- Flèches mobile (haut/bas) -->
+            <svg class="w-4 h-4 md:hidden block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+            </svg>
+            <svg class="w-4 h-4 md:hidden block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
-  ) : null}
+  </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('comparison-container');
+    const slider = document.getElementById('slider-handle');
+    const afterImage = document.getElementById('image-after');
+    
+    if (!container || !slider || !afterImage) return;
+
+    // Position initiale à 50%
+    const isMobile = window.innerWidth < 768;
+    let sliderPosition = 50;
+    
+    function updateSliderPosition(position) {
+      sliderPosition = position;
+      
+      if (isMobile) {
+        // Pour mobile: barre horizontale qui se déplace de haut en bas
+        slider.style.left = '0';
+        slider.style.top = `${position}%`;
+        slider.style.transform = 'translateY(-50%)';
+        afterImage.style.height = `${position}%`;
+        afterImage.style.width = '100%';
+      } else {
+        // Pour desktop: barre verticale qui se déplace de gauche à droite
+        slider.style.left = `${position}%`;
+        slider.style.top = '0';
+        slider.style.transform = 'translateX(-50%)';
+        afterImage.style.width = `${position}%`;
+        afterImage.style.height = '100%';
+      }
+    }
+
+    // Initialisation de la position
+    updateSliderPosition(sliderPosition);
+
+    // Gestion du mouvement de la souris
+    let isDragging = false;
+
+    slider.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      isDragging = true;
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      
+      const rect = container.getBoundingClientRect();
+      let position;
+      
+      if (isMobile) {
+        // Calcul de la position en % pour mobile (vertical)
+        position = ((e.clientY - rect.top) / rect.height) * 100;
+      } else {
+        // Calcul de la position en % pour desktop (horizontal)
+        position = ((e.clientX - rect.left) / rect.width) * 100;
+      }
+      
+      // Limiter entre 0 et 100%
+      position = Math.max(0, Math.min(100, position));
+      
+      updateSliderPosition(position);
+    });
+
+    // Support tactile pour les appareils mobiles
+    slider.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      isDragging = true;
+    });
+
+    document.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging || !e.touches[0]) return;
+      
+      const touch = e.touches[0];
+      const rect = container.getBoundingClientRect();
+      let position;
+      
+      if (isMobile) {
+        position = ((touch.clientY - rect.top) / rect.height) * 100;
+      } else {
+        position = ((touch.clientX - rect.left) / rect.width) * 100;
+      }
+      
+      position = Math.max(0, Math.min(100, position));
+      
+      updateSliderPosition(position);
+    });
+
+    // Gestion du redimensionnement de la fenêtre
+    window.addEventListener('resize', () => {
+      const newIsMobile = window.innerWidth < 768;
+      if (newIsMobile !== isMobile) {
+        location.reload();
+      }
+    });
+  });
+</script>

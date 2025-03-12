@@ -15,7 +15,8 @@ collections:
         name: "homepage"
         fields:
           - { label: "Titre", name: "title", widget: "string" }
-          - { label: "Image principale", name: "hero_image", widget: "image" }
+          - { label: "Image avant", name: "hero_image_before", widget: "image" }
+          - { label: "Image après", name: "hero_image_after", widget: "image" }
           - { label: "Description", name: "description", widget: "text" }
           - label: "Réalisations mises en avant"
             name: "featured_realisations"
