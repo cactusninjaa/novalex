@@ -1,6 +1,6 @@
 ---
 title: Novalex, quarante ans d’engagement
-hero_image_before: /images/uploads/image-de-thomas-sauvage.jpeg
+hero_image_before: /images/uploads/100-rue-de-varenne-2.jpg
 hero_image_after: /images/uploads/image-de-thomas-sauvage.jpeg
 description: À travers une haute maîtrise technique du gros œuvre, nous
   bâtissons l’avenir avec des chantiers respectueux de l’environnement et
