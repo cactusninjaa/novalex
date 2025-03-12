@@ -1,9 +1,8 @@
 ---
 title: "Redressement de combles sur site de carrière "
 hero_image: /images/uploads/16-abbe-de-l-epee-copie.jpg
-description: >+2
-   Redressement des combles d’un immeuble situé dans le 5ᵉ arrondissement de Paris, reposant sur un site de carrière souterraine. Grâce à notre haute technicité, nous avons sécurisé l’ouvrage tout en respectant les contraintes géotechniques et architecturales du bâti ancien.
-
+description: >2
+   Redressement des combles d’un immeuble situé dans le 5ᵉ arrondissement de Paris, reposant sur un site de carrière souterraine.
 caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
