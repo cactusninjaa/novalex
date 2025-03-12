@@ -6,9 +6,9 @@ description: >+2
 
 caracteristiques:
   - block_title: Maitre d’ouvrage
-    block_value: Alexandre Stermane
+    block_value: Novalex
   - block_title: Adresse
-    block_value: Paris 5éme
+    block_value: Paris 5e
   - block_title: Date
     block_value: 2000 - 2001
   - block_title: Spécificités techniques
