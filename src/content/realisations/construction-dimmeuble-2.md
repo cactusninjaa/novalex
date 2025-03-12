@@ -2,9 +2,8 @@
 title: Réhabilitation immeuble
 hero_image: /images/uploads/rue-de-varenne-2011.jpg
 description: Réalisation d’un chantier comprenant la rénovation de la façade,
-  l’aménagement des espaces intérieurs, ainsi que la mise à jour des
-  infrastructures techniques, dans le respect des normes environnementales et de
-  sécurité.
+  l’aménagement des espaces intérieurs, dans le respect des normes
+  environnementales et de sécurité.
 caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
