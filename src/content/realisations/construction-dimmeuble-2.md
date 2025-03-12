@@ -1,6 +1,6 @@
 ---
 title: Réhabilitation immeuble
-hero_image: /images/uploads/100-rue-de-varenne-echafaudage-parapluie.jpg
+hero_image: /images/uploads/rue-de-varenne-2011.jpg
 description: Réalisation d’un chantier comprenant la rénovation de la façade,
   l’aménagement des espaces intérieurs, ainsi que la mise à jour des
   infrastructures techniques, dans le respect des normes environnementales et de
@@ -9,7 +9,7 @@ caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
   - block_title: Adresse
-    block_value: 100 rue de varenne
+    block_value: Paris 7e
   - block_title: Date
     block_value: 02/04/2025
   - block_title: Spécificités techniques
