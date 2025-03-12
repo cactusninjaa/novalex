@@ -1,5 +1,5 @@
 ---
-title: Atelier d'artiste
+title: Construction d'un atelier d'artiste
 hero_image: /images/uploads/atelier-d-artiste-charenton.jpg
 description: >+
   Construction d’un atelier d’artiste, conçu pour offrir un espace lumineux et
