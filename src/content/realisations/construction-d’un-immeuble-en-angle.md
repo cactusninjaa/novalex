@@ -1,5 +1,5 @@
 ---
-title: Immeuble en angle
+title: Construction d'un immeuble en angle
 hero_image: /images/uploads/32-palouzie-st-ouen-2009.jpg
 description: >+
   Construction d’un immeuble en angle de rue, optimisant l’utilisation de
