@@ -1,13 +1,9 @@
 ---
 title: Création d'un loft
 hero_image: /images/uploads/loft-faisanderie-enhanced-2.png
-description: Notre entreprise a réalisé la transformation complète d’un
-  appartement en un loft moderne et lumineux au cœur du 16ᵉ arrondissement de
-  Paris. Ce projet a impliqué la refonte totale de l’espace, avec l’ouverture
-  des volumes et l’aménagement sur mesure des différentes zones de vie. En
-  alliant design contemporain et exigences techniques, nous avons conçu un
-  espace à la fois esthétique, fonctionnel et conforme aux normes de sécurité et
-  d’isolation.
+description: Transformation complète d’un appartement en un loft moderne et
+  lumineux au cœur du 16ᵉ arrondissement de Paris tout en alliant design
+  contemporain et exigences techniques.
 caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
