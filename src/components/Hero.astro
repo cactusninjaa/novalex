@@ -1,7 +1,6 @@
 ---
-
+// ImageComparison.astro
 const { title, description, hero_image_before, hero_image_after } = Astro.props;
-
 ---
 
 <div class="flex flex-col w-full bg-[#212529] md:grid md:grid-cols-2 md:h-screen items-center">
@@ -16,19 +15,21 @@ const { title, description, hero_image_before, hero_image_after } = Astro.props;
   
   <div class="w-full relative h-screen">
     <div id="comparison-container" class="w-full h-full relative overflow-hidden">
-      <!-- Image Avant -->
+      <!-- Image Avant (visible en arrière-plan) -->
       <div class="w-full h-full absolute top-0 left-0">
         <img src={hero_image_before} alt="Image avant" class="w-full h-full object-cover" />
       </div>
 
-      <!-- Image Après (visible partiellement) -->
+      <!-- Image Après (avec clip) -->
       <div id="image-after" class="w-full h-full absolute top-0 left-0 overflow-hidden">
-        <img src={hero_image_after} alt="Image après" class="w-full h-full object-cover" />
+        <div class="clip-container w-full h-full">
+          <img src={hero_image_after} alt="Image après" class="w-full h-full object-cover" />
+        </div>
       </div>
 
       <!-- Barre de séparation (adaptative selon le format) -->
-      <div id="slider-handle" class="absolute md:w-1 md:h-full h-1 w-full bg-white md:cursor-ew-resize cursor-row-resize flex items-center justify-center z-10">
-        <div class="h-6 w-6 rounded-full bg-white flex items-center justify-center">
+      <div id="slider-handle" class="absolute md:w-1 md:h-full h-1 w-full bg-white md:cursor-ew-resize cursor-row-resize flex items-center justify-center z-20">
+        <div class="h-6 w-6 rounded-full bg-white flex items-center justify-center p-4">
           <div class="flex md:flex-row flex-col">
             <!-- Flèches desktop (gauche/droite) -->
             <svg class="w-4 h-4 md:block hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -51,17 +52,23 @@ const { title, description, hero_image_before, hero_image_after } = Astro.props;
   </div>
 </div>
 
+<style>
+  .clip-container {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+</style>
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('comparison-container');
     const slider = document.getElementById('slider-handle');
-    const afterImage = document.getElementById('image-after');
+    const imageAfter = document.getElementById('image-after').querySelector('.clip-container');
     
-    if (!container || !slider || !afterImage) return;
+    if (!container || !slider || !imageAfter) return;
 
     // Position initiale à 50%
     const isMobile = window.innerWidth < 768;
-    let sliderPosition = 50;
+    let sliderPosition = 10;
     
     function updateSliderPosition(position) {
       sliderPosition = position;
@@ -71,15 +78,17 @@ const { title, description, hero_image_before, hero_image_after } = Astro.props;
         slider.style.left = '0';
         slider.style.top = `${position}%`;
         slider.style.transform = 'translateY(-50%)';
-        afterImage.style.height = `${position}%`;
-        afterImage.style.width = '100%';
+        
+        // Masque pour l'image "après" (montrer seulement en bas)
+        imageAfter.style.clipPath = `polygon(0 ${position}%, 100% ${position}%, 100% 100%, 0 100%)`;
       } else {
         // Pour desktop: barre verticale qui se déplace de gauche à droite
         slider.style.left = `${position}%`;
         slider.style.top = '0';
         slider.style.transform = 'translateX(-50%)';
-        afterImage.style.width = `${position}%`;
-        afterImage.style.height = '100%';
+        
+        // Masque pour l'image "après" (montrer seulement à droite)
+        imageAfter.style.clipPath = `polygon(${position}% 0, 100% 0, 100% 100%, ${position}% 100%)`;
       }
     }
 
