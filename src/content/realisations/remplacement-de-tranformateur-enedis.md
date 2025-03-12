@@ -1,10 +1,10 @@
 ---
-title: Remplacement de tranformateur Enedis
+title: Remplacement de tranformateur
 hero_image: /images/uploads/preparation-sortie-transfo-rue-erasme.jpeg
 description: >+
-  Extraction et le remplacement de transformateurs Enedis sur plusieurs sites,
-  en assurant la protection des installations et des équipes tout en minimisant
-  les nuisances visuelles liées aux travaux.
+  Extraction et remplacement de transformateurs Enedis, en assurant la
+  protection des installations tout en minimisant les nuisances visuelles liées
+  aux travaux.
 
 caracteristiques:
   - block_title: Maitre d’ouvrage
