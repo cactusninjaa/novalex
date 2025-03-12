@@ -11,8 +11,9 @@ featured_realisations:
     réalisations, témoins de notre expertise et de notre passion pour le
     bâtiment.
   items:
-    - Construction d'immeuble
     - Réhabilitation immeuble
+    - Remplacement de tranformateur Enedis
+    - Construction d'immeuble HQE
 engagements:
   title: Nos engagements
   description: Nous nous engageons pour des chantiers plus propres et plus sûrs,
