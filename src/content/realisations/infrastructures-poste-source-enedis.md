@@ -1,6 +1,6 @@
 ---
 title: Infrastructures poste source Enedis
-hero_image: /images/uploads/image-de-thomas-sauvage-via-yahoo-mail-1-.jpeg
+hero_image: /images/uploads/tanchee-pour-raccordement-canalisation-poste-source-enedis-.jpg
 description: >+
   Réalisation des infrastructures nécessaires pour un poste source Enedis,
   incluant le blindage, la mise en place de canalisations, de caniveaux et de
