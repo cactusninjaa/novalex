@@ -1,5 +1,5 @@
 ---
-title: Construction d'un restaurant McDonald's
+title: Construction d'un restaurant
 hero_image: /images/uploads/mc-donald-charenton.jpg
 description: >+
   Construction d’un restaurant McDonald's, conçu pour offrir une expérience
