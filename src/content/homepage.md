@@ -12,8 +12,8 @@ featured_realisations:
     bâtiment.
   items:
     - Réhabilitation immeuble
-    - Remplacement de tranformateur Enedis
     - Construction d'immeuble HQE
+    - Remplacement de tranformateur
 engagements:
   title: Nos engagements
   description: Nous nous engageons pour des chantiers plus propres et plus sûrs,
