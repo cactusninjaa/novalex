@@ -24,5 +24,5 @@ gallery:
   - block_title: Après
     images:
       - image: /images/uploads/100-rue-de-varenne-façade-rue.jpg
-      - image: /images/uploads/image-de-thomas-sauvage-1-.jpeg
+      - image: /images/uploads/image-de-thomas-sauvage.jpeg
 ---
