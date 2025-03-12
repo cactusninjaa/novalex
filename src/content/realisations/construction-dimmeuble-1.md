@@ -15,13 +15,21 @@ caracteristiques:
   - block_title: Spécificités techniques
     block_value: Construction d'un immeuble avec façade en verre
 gallery:
-  - block_title: null
+  - block_title: Projet
     images:
-      - image: /images/uploads/16-place-denfert-1.jpg
-      - image: /images/uploads/16-place-denfert-2.jpg
-      - image: /images/uploads/16-place-denfert-3.jpg
-      - image: /images/uploads/16-place-denfert-façade-arrière-avant-pose-persienne-.jpg
-      - image: /images/uploads/16-place-denfert-rochereau.jpg
       - image: /images/uploads/maison-14-ext2.jpg
       - image: /images/uploads/maison-14-terrasse.jpg
+  - block_title: Pendant les travaux
+    images:
+      - image: /images/uploads/pb080875.jpg
+      - image: /images/uploads/16-place-denfert-rochereau.jpg
+      - image: /images/uploads/16-place-denfert-3.jpg
+      - image: /images/uploads/16-place-denfert-1.jpg
+      - image: /images/uploads/16-place-denfert-2.jpg
+      - image: /images/uploads/16-place-denfert-rochereau-copie.jpg
+  - block_title: Réalisation finale
+    images:
+      - image: /images/uploads/img_2336.jpg
+      - image: /images/uploads/12-02-2016-17-56-02-84.jpg
+      - image: /images/uploads/16-place-denfert-façade-arrière-avant-pose-persienne-.jpg
 ---
