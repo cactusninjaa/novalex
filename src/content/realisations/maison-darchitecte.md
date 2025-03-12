@@ -1,5 +1,5 @@
 ---
-title: Maison d'architecte
+title: Construction d'une maison d'architecte
 hero_image: /images/uploads/noisy-le-grand-2jpg.jpg
 description: Conception et réalisation une maison d’architecte moderne, mettant
   en valeur une grande verrière qui apporte une luminosité naturelle abondante
