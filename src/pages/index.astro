@@ -8,8 +8,7 @@ import { getCollection } from "astro:content";
 import Footer from '../components/Footer.astro';
 
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
+import HeroHome from '../components/HeroHome.astro';
 
 import "../styles/global.css";
 
@@ -19,7 +18,7 @@ const realisations = await getCollection("realisations");
 
 <Layout>
   <div class="flex gap-12 md:gap-16 flex-col justify-center items-center">
-      <Hero 
+      <HeroHome 
         title={homepage.title} 
         description={homepage.description} 
         hero_image_before={homepage.hero_image_before} 

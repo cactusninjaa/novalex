@@ -1,0 +1,116 @@
+---
+// ImageComparison.astro
+const { title, description, hero_image_before, hero_image_after } = Astro.props;
+---
+
+<div class="flex flex-col w-full bg-[#212529] md:grid md:grid-cols-2 md:h-screen items-center">
+  <div class="absolute w-full h-full flex justify-center items-end text-white px-4 py-8 md:py-16">
+    <div class="max-w-7xl w-full">
+      <h1 class="text-5xl font-light max-w-md">{title}</h1>
+      <p class="mt-6 text-lg max-w-sm">{description}</p>
+    </div>
+  </div>
+  <div class="h-screen text-white w-full max-w-7xl flex flex-col justify-end">
+  </div>
+  
+  <div class="w-full relative h-screen">
+    <div id="comparison-container" class="w-full h-full relative overflow-hidden">
+      <!-- Image Avant (visible uniquement en desktop) -->
+      <div class="w-full h-full absolute top-0 left-0 md:block hidden">
+        <img src={hero_image_before} alt="Image avant" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Image Après (toujours visible en mobile, avec clip en desktop) -->
+      <div id="image-after" class="w-full h-full absolute top-0 left-0 overflow-hidden">
+        <div class="clip-container w-full h-full">
+          <img src={hero_image_after} alt="Image après" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Barre de séparation (uniquement en desktop) -->
+      <div id="slider-handle" class="absolute md:w-1 md:h-full md:flex hidden bg-white cursor-ew-resize items-center justify-center z-20">
+        <div class="h-6 w-6 rounded-full bg-white flex p-4 items-center justify-center">
+          <div class="flex flex-row">
+            <!-- Flèches desktop (gauche/droite) -->
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  @media (min-width: 768px) {
+    .clip-container {
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('comparison-container');
+    const slider = document.getElementById('slider-handle');
+    const imageAfter = document.getElementById('image-after').querySelector('.clip-container');
+    
+    // Vérifier si nous sommes en mode desktop
+    const isMobile = window.innerWidth < 768;
+    
+    // Si on est en mobile, ne rien faire car on veut juste montrer l'image after
+    if (isMobile || !container || !slider || !imageAfter) return;
+    
+    // Position initiale à 50% (desktop uniquement)
+    let sliderPosition = 10;
+    
+    function updateSliderPosition(position) {
+      // Uniquement pour desktop
+      slider.style.left = `${position}%`;
+      slider.style.top = '0';
+      slider.style.transform = 'translateX(-50%)';
+      
+      // Masque pour l'image "après" (montrer seulement à droite)
+      imageAfter.style.clipPath = `polygon(${position}% 0, 100% 0, 100% 100%, ${position}% 100%)`;
+    }
+
+    // Initialisation de la position (desktop uniquement)
+    updateSliderPosition(sliderPosition);
+
+    // Gestion du mouvement de la souris (desktop uniquement)
+    let isDragging = false;
+
+    slider.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      isDragging = true;
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      
+      const rect = container.getBoundingClientRect();
+      let position = ((e.clientX - rect.left) / rect.width) * 100;
+      
+      // Limiter entre 0 et 100%
+      position = Math.max(0, Math.min(100, position));
+      
+      updateSliderPosition(position);
+    });
+
+    // Gestion du redimensionnement de la fenêtre
+    window.addEventListener('resize', () => {
+      const newIsMobile = window.innerWidth < 768;
+      if (newIsMobile !== isMobile) {
+        location.reload();
+      }
+    });
+  });
+</script>
