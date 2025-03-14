@@ -59,7 +59,7 @@ equipe:
   description: Nos équipes sont formées et qualifiées pour intervenir en toute
     sécurité, que ce soit sur les voies ferrées, en électricité ou à la manœuvre
     d’engins comme les mini-pelles, bulldozers et nacelles.
-  image: /images/uploads/pb080875.webp
+  image: /images/uploads/pb080875-1-.webp
 certifications:
   title: Certification et assurances
   items:
