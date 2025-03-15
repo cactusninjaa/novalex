@@ -1,7 +1,7 @@
 ---
 title: Novalex, quarante ans d’engagement
-hero_image_before: /images/uploads/facade-avant-enhanced-1-.png
-hero_image_after: /images/uploads/image-de-thomas-sauvage.jpeg
+hero_image_before: /images/uploads/facade-avant-enhanced-1-.webp
+hero_image_after: /images/uploads/image-de-thomas-sauvage-1-.webp
 description: À travers une haute maîtrise technique du gros œuvre, nous
   bâtissons l’avenir avec des chantiers respectueux de l’environnement et
   durables.
@@ -59,7 +59,7 @@ equipe:
   description: Nos équipes sont formées et qualifiées pour intervenir en toute
     sécurité, que ce soit sur les voies ferrées, en électricité ou à la manœuvre
     d’engins comme les mini-pelles, bulldozers et nacelles.
-  image: /images/uploads/pb080875.jpg
+  image: /images/uploads/equipe.webp
 certifications:
   title: Certification et assurances
   items:
@@ -68,7 +68,7 @@ certifications:
         la maçonnerie en béton armé technicité confirmé, le terrassement, la
         plâtrerie, les canalisations d’assainissement, la démolition, le sciage
         et le carottage.
-      block_image: /images/uploads/logo-qualibat.png
+      block_image: /images/uploads/logo-qualibat.webp
     - block_title: Enedis
       block_description: Nous sommes également certifiés par ENEDIS et collaborons
         avec eux depuis plusieurs années, ce qui nous permet de mener à bien nos
@@ -78,5 +78,5 @@ certifications:
       block_description: Avec une couverture décennale et responsabilité civile via
         MMA, notre entreprise se distingue par une sinistralité très faible,
         garantissant ainsi la qualité et la sécurité de nos interventions.
-      block_image: /images/uploads/logo-mma.jpg
+      block_image: /images/uploads/logo-mma.webp
 ---
