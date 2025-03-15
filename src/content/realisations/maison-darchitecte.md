@@ -1,6 +1,6 @@
 ---
 title: Construction d'une maison d'architecte
-hero_image: /images/uploads/noisy-le-grand-2jpg.jpg
+hero_image: /images/uploads/noisy-le-grand-2.webp
 description: Conception et réalisation une maison d’architecte moderne, mettant
   en valeur une grande verrière qui apporte une luminosité naturelle abondante
   et une connexion fluide entre l’intérieur et l’extérieur.
@@ -21,7 +21,7 @@ caracteristiques:
       l’accumulation d’eau.
 gallery:
   - images:
-      - image: /images/uploads/noisy-le-grand-1-2-maisons.jpg
-      - image: /images/uploads/noisy-le-grand.jpg
-      - image: /images/uploads/noisy-le-grand-2jpg.jpg
+      - image: /images/uploads/noisy-le-grand-maisons.webp
+      - image: /images/uploads/noisy-le-grand.webp
+      - image: /images/uploads/noisy-le-grand-2.webp
 ---
