@@ -1,6 +1,6 @@
 ---
 title: Construction d'un immeuble en angle
-hero_image: /images/uploads/32-palouzie-st-ouen-2009.webp
+hero_image: /images/uploads/32-palouzie-st-ouen-2009-1-.webp
 description: >+
   Construction d’un immeuble en angle de rue, optimisant l’utilisation de
   l’espace urbain avec une conception moderne et fonctionnelle, tout en
@@ -26,6 +26,6 @@ caracteristiques:
 gallery:
   - images:
       - image: /images/uploads/angle-palouzie-et-alexandre-dumas-st-ouen.webp
-      - image: /images/uploads/dsc00206-1-.webp
-      - image: /images/uploads/32-palouzie-st-ouen-2009.webp
+      - image: /images/uploads/dsc00206-1-1-.webp
+      - image: /images/uploads/32-palouzie-st-ouen-2009-1-.webp
 ---
