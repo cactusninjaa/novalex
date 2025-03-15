@@ -1,6 +1,6 @@
 ---
 title: Reproduction d'un carrelage
-hero_image: /images/uploads/image-de-thomas-sauvage.jpg
+hero_image: /images/uploads/image-de-thomas-sauvage2webp.webp
 description: >+
   Reproduction un carrelage spécifique par moulage afin de préserver
   l’esthétique de la façade, ce modèle n’étant plus disponible dans le commerce.
@@ -21,6 +21,6 @@ caracteristiques:
       les contraintes architecturales du bâtiment.
 gallery:
   - images:
-      - image: /images/uploads/ouverture-façade-27-ru-e-bergeres-pour-sortie-transformateur.jpg
-      - image: /images/uploads/image-de-thomas-sauvage.jpg
+      - image: /images/uploads/ouverture-façade-27-ru-e-bergeres-pour-sortie-transformateur-1-.webp
+      - image: /images/uploads/image-de-thomas-sauvage2webp.webp
 ---
