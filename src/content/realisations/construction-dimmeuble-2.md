@@ -1,6 +1,6 @@
 ---
 title: Réhabilitation immeuble
-hero_image: /images/uploads/rue-de-varenne-2011.jpg
+hero_image: /images/uploads/rue-de-varenne-2011.webp
 description: Réalisation d’un chantier comprenant la rénovation de la façade,
   l’aménagement des espaces intérieurs, dans le respect des normes
   environnementales et de sécurité.
@@ -19,10 +19,10 @@ caracteristiques:
 gallery:
   - block_title: Avant
     images:
-      - image: /images/uploads/image-agrandie-et-améliorée-1-.jpeg
-      - image: /images/uploads/100-rue-de-varenne-2.jpg
+      - image: /images/uploads/facade-avant-enhanced-1.webp
+      - image: /images/uploads/100-rue-de-varenne-2.webp
   - block_title: Après
     images:
-      - image: /images/uploads/100-rue-de-varenne-façade-rue.jpg
-      - image: /images/uploads/image-de-thomas-sauvage.jpeg
+      - image: /images/uploads/100-rue-de-varenne-façade-rue-1-.webp
+      - image: /images/uploads/image-de-thomas-sauvage.webp
 ---
