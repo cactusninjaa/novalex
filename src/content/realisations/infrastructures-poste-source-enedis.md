@@ -1,6 +1,6 @@
 ---
 title: Infrastructures poste source Enedis
-hero_image: /images/uploads/tanchee-pour-raccordement-canalisation-poste-source-enedis-.jpg
+hero_image: /images/uploads/tanchee-raccordement-canalisation-enedis.webp
 description: >+
   Réalisation des infrastructures nécessaires pour un poste source Enedis,
   incluant le blindage, la mise en place de canalisations, de caniveaux et de
@@ -27,16 +27,16 @@ caracteristiques:
 gallery:
   - block_title: Blindage
     images:
-      - image: /images/uploads/image-de-thomas-sauvage-via-yahoo-mail-1-.jpeg
-      - image: /images/uploads/image-de-thomas-sauvage-via-yahoo-mail.jpeg
+      - image: /images/uploads/image-de-thomas-sauvage-via-yahoo-mail.webp
+      - image: /images/uploads/image-de-thomas-sauvage-via-yahoo-mail-2-.webp
   - block_title: Caniveau
     images:
-      - image: /images/uploads/pose-caniveaux-dans-poste-source-enedis.jpg
+      - image: /images/uploads/pose-caniveaux-dans-poste-source-enedis.webp
   - block_title: Tranchée pour passage LS
     images:
-      - image: /images/uploads/image-de-thomas-sauvage-via-yahoo-mail-2-.jpeg
-      - image: /images/uploads/tranchee-avec-fourreaux-pour-passage-ls-poste-source-enedis.jpg
+      - image: /images/uploads/image-de-thomas-sauvage-via-yahoo-mail-1-.webp
+      - image: /images/uploads/tranchée-avec-fourreaux-enedis.webp
   - block_title: Tranchée pour canalisation
     images:
-      - image: /images/uploads/tanchee-pour-raccordement-canalisation-poste-source-enedis-.jpg
+      - image: /images/uploads/tanchee-raccordement-canalisation-enedis.webp
 ---
