@@ -29,7 +29,7 @@ gallery:
   - block_title: Projet
     images:
       - image: /images/uploads/maison-14-ext-2.webp
-      - image: /images/uploads/maison-14-terrasse.webp
+      - image: /images/uploads/maison-14-terrasse-1-.webp
   - block_title: Pendant les travaux
     images:
       - image: /images/uploads/equipe.webp
