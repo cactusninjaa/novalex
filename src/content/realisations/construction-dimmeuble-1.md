@@ -1,6 +1,6 @@
 ---
 title: Construction d'immeuble HQE
-hero_image: /images/uploads/maison-14-ext2.jpg
+hero_image: /images/uploads/maison-14-ext-2.webp
 description: Réalisation d’un chantier comprenant la rénovation de la façade,
   l’aménagement des espaces intérieurs, ainsi que la mise à jour des
   infrastructures techniques, dans le respect des normes environnementales et de
@@ -28,19 +28,19 @@ caracteristiques:
 gallery:
   - block_title: Projet
     images:
-      - image: /images/uploads/maison-14-ext2.jpg
-      - image: /images/uploads/maison-14-terrasse.jpg
+      - image: /images/uploads/maison-14-ext-2.webp
+      - image: /images/uploads/maison-14-terrasse.webp
   - block_title: Pendant les travaux
     images:
-      - image: /images/uploads/pb080875.jpg
-      - image: /images/uploads/16-place-denfert-rochereau.jpg
-      - image: /images/uploads/16-place-denfert-3.jpg
-      - image: /images/uploads/16-place-denfert-1.jpg
-      - image: /images/uploads/16-place-denfert-2.jpg
-      - image: /images/uploads/16-place-denfert-rochereau-copie.jpg
+      - image: /images/uploads/equipe.webp
+      - image: /images/uploads/place-denfert-rochereau.webp
+      - image: /images/uploads/16-place-denfert-3.webp
+      - image: /images/uploads/16-place-denfert-rochereau-copie.webp
+      - image: /images/uploads/16-place-denfert-2-1-.webp
+      - image: /images/uploads/16-place-denfert.webp
   - block_title: Réalisation finale
     images:
-      - image: /images/uploads/img_2336.jpg
-      - image: /images/uploads/12-02-2016-17-56-02-84.jpg
-      - image: /images/uploads/16-place-denfert-façade-arrière-avant-pose-persienne-.jpg
+      - image: /images/uploads/image-2336-squoosh.webp
+      - image: /images/uploads/image-02-dec-2016.webp
+      - image: /images/uploads/16-place-denfert-façade-arrière-avant-pose-persienne-.webp
 ---
