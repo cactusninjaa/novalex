@@ -1,6 +1,6 @@
 ---
 title: Installation d’un plancher technaria
-hero_image: /images/uploads/plancher-tecnariat-suite.jpg
+hero_image: /images/uploads/plancher-tecnariat-suite.webp
 description: Installation d’un plancher technaria, permettant d’optimiser
   l’intégration des réseaux électriques, hydrauliques et informatiques tout en
   offrant une solution modulable et esthétique.
@@ -19,6 +19,6 @@ caracteristiques:
       de l’appartement.
 gallery:
   - images:
-      - image: /images/uploads/plancher-tecnar.jpg
-      - image: /images/uploads/plancher-tecnariat-suite.jpg
+      - image: /images/uploads/plancher-tecnar.webp
+      - image: /images/uploads/plancher-tecnariat-suite.webp
 ---
