@@ -1,6 +1,6 @@
 ---
 title: Sciage par disque diamant
-hero_image: /images/uploads/scie-murale.jpg
+hero_image: /images/uploads/scie-murale.webp
 description: >+
   Sciage par disque diamant, une technique de découpe de matériaux durs tels que
   le béton, la pierre, le métal ou le béton armé, afin d’obtenir des coupes
@@ -17,5 +17,5 @@ caracteristiques:
       et environnementales.
 gallery:
   - images:
-      - image: /images/uploads/scie-murale.jpg
+      - image: /images/uploads/scie-murale.webp
 ---
