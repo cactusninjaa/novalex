@@ -1,6 +1,6 @@
 ---
 title: Construction d'un restaurant
-hero_image: /images/uploads/mc-donald-charenton.jpg
+hero_image: /images/uploads/mcdonald-charenton.webp
 description: >+
   Construction d’un restaurant McDonald's, conçu pour offrir une expérience
   client moderne et fonctionnelle tout en respectant les normes spécifiques de
@@ -22,5 +22,5 @@ caracteristiques:
       les normes environnementales et les standards de qualité de la chaîne.
 gallery:
   - images:
-      - image: /images/uploads/mc-donald-charenton.jpg
+      - image: /images/uploads/mcdonald-charenton.webp
 ---
