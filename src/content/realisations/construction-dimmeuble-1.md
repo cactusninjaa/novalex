@@ -36,11 +36,11 @@ gallery:
       - image: /images/uploads/place-denfert-rochereau.webp
       - image: /images/uploads/16-place-denfert-3.webp
       - image: /images/uploads/16-place-denfert-rochereau-copie.webp
-      - image: /images/uploads/16-place-denfert-2-1-.webp
+      - image: /images/uploads/16-place-denfert-2-1-1-.webp
       - image: /images/uploads/16-place-denfert.webp
   - block_title: Réalisation finale
     images:
-      - image: /images/uploads/image-2336-squoosh.webp
+      - image: /images/uploads/image-2336-squoosh-1-.webp
       - image: /images/uploads/image-02-dec-2016.webp
       - image: /images/uploads/16-place-denfert-façade-arrière-avant-pose-persienne-.webp
 ---
