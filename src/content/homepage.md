@@ -1,7 +1,7 @@
 ---
 title: Novalex, quarante ans d’engagement
-hero_image_before: /images/uploads/facade-avant-enhanced-1-.webp
-hero_image_after: /images/uploads/image-de-thomas-sauvage-1-.webp
+hero_image_before: /images/uploads/facade-avant-enhanced-1.webp
+hero_image_after: /images/uploads/image-de-thomas-sauvage.webp
 description: À travers une haute maîtrise technique du gros œuvre, nous
   bâtissons l’avenir avec des chantiers respectueux de l’environnement et
   durables.

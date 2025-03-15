@@ -1,6 +1,6 @@
 ---
 title: Remplacement de tranformateur
-hero_image: /images/uploads/preparation-sortie-transfo-rue-erasme.jpeg
+hero_image: /images/uploads/préparation-sortie-rue-erasme.webp
 description: >+
   Extraction et remplacement de transformateurs Enedis, en assurant la
   protection des installations tout en minimisant les nuisances visuelles liées
@@ -25,15 +25,15 @@ caracteristiques:
 gallery:
   - block_title: Camouflage
     images:
-      - image: /images/uploads/poste-alma-camouflage-grue.jpeg
+      - image: /images/uploads/poste-alma-camouflage-grue.webp
   - block_title: Protection parepluie
     images:
-      - image: /images/uploads/preparation-sortie-transfo-rue-erasme.jpeg
-      - image: /images/uploads/poste-source-alma-protection-parepluie.jpeg
+      - image: /images/uploads/préparation-sortie-rue-erasme.webp
+      - image: /images/uploads/protection-parepluie-alma.webp
   - block_title: Extraction et remplacement
     images:
-      - image: /images/uploads/sortie-tranfo-alma.jpg
-      - image: /images/uploads/sortie-transfo-poste-enedis-courcelles.jpg
-      - image: /images/uploads/enedis-alma.jpg
-      - image: /images/uploads/poste-source-alma-preparation-sortie-transformateur.jpg
+      - image: /images/uploads/sortie-tranfo-alma.webp
+      - image: /images/uploads/sortie-transfo-poste-enedis-courcelles-1-.webp
+      - image: /images/uploads/enedis-alma.webp
+      - image: /images/uploads/préparation-sortie-transformateur.webp
 ---

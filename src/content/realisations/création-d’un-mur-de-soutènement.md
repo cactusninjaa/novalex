@@ -1,6 +1,6 @@
 ---
 title: Création d’un mur de soutènement
-hero_image: /images/uploads/mur-de-soutenement-ferme-henri-yerres.jpg
+hero_image: /images/uploads/mur-de-soutènement-ferme-henri-yerres.webp
 description: >+
   Création d’un mur de soutènement, conçu pour maintenir les terres et éviter
   les risques de glissement de terrain tout en garantissant la stabilité des
@@ -22,6 +22,6 @@ caracteristiques:
       tout en assurant la longévité et la solidité de l'ouvrage.
 gallery:
   - images:
-      - image: /images/uploads/mur-de-sotenement-2024-yerres.jpg
-      - image: /images/uploads/mur-de-soutenement-ferme-henri-yerres.jpg
+      - image: /images/uploads/mur-de-sotenement-2024-yerres.webp
+      - image: /images/uploads/mur-de-soutènement-ferme-henri-yerres.webp
 ---

@@ -1,6 +1,6 @@
 ---
 title: Infrastructures poste SNCF
-hero_image: /images/uploads/batiment-commande-sncf-cesson-1.jpeg
+hero_image: /images/uploads/bâtiment-commande-sncf-cesson.webp
 description: >+
   Realisation des infrastructures pour un poste de commande SNCF, incluant la
   construction d’un banc de transformation, la construction d'un poste de
@@ -27,14 +27,14 @@ caracteristiques:
 gallery:
   - block_title: Banc de tranformateur
     images:
-      - image: /images/uploads/ferrailage-banc-tranfo-poste-commande-sncf.jpg
-      - image: /images/uploads/banc-transfo-sncf-cesson.jpg
+      - image: /images/uploads/ferroillage-banc-poste-commande-sncf.webp
+      - image: /images/uploads/banc-transfo-sncf-cesson.webp
   - block_title: Poste de commande
     images:
-      - image: /images/uploads/ossature-poste-commande-sncf-cesson.jpg
-      - image: /images/uploads/batiment-commande-sncf-cesson-1.jpeg
+      - image: /images/uploads/ossature-poste-commande-sncf-cesson.webp
+      - image: /images/uploads/bâtiment-commande-sncf-cesson.webp
   - block_title: Raccordement des infrastructures
     images:
-      - image: /images/uploads/tranchee-poste-source-persan.jpg
-      - image: /images/uploads/cesson-tranchees-entre-batiment-commande-et-la-voie-de-chemein-de-fer.jpeg
+      - image: /images/uploads/tranchee-poste-source-persan.webp
+      - image: /images/uploads/cesson-tranchées-entre-bâtiment-et-voie-de-chemin-de-fer.webp
 ---

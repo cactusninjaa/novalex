@@ -1,6 +1,6 @@
 ---
 title: "Redressement de combles sur site de carrière "
-hero_image: /images/uploads/16-abbe-de-l-epee-copie.jpg
+hero_image: /images/uploads/abbé-de-l-épée.webp
 description: >2
    Redressement des combles d’un immeuble situé dans le 5ᵉ arrondissement de Paris, reposant sur un site de carrière souterraine.
 caracteristiques:
@@ -20,8 +20,8 @@ caracteristiques:
       redressement des combles sans compromettre l’intégrité du bâtiment.
 gallery:
   - images:
-      - image: /images/uploads/16-abbe-de-l-epee-copie-2.jpg
-      - image: /images/uploads/16-abbe-de-l-epee-copie.jpg
-      - image: /images/uploads/16-abbe-de-l-epee.jpg
-      - image: /images/uploads/16-abbee-de-l-epee.jpg
+      - image: /images/uploads/abbé-de-l-épée-1-.webp
+      - image: /images/uploads/abbé-de-l-épée.webp
+      - image: /images/uploads/abbé-de-l-épée-2-.webp
+      - image: /images/uploads/abbee-de-l-epee.webp
 ---

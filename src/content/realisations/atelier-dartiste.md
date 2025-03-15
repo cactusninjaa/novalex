@@ -1,6 +1,6 @@
 ---
 title: Construction d'un atelier d'artiste
-hero_image: /images/uploads/atelier-d-artiste-charenton.jpg
+hero_image: /images/uploads/atelier-d-artiste-charenton.webp
 description: >+
   Construction d’un atelier d’artiste, conçu pour offrir un espace lumineux et
   fonctionnel, tout en répondant aux besoins spécifiques d'un environnement de
@@ -23,5 +23,5 @@ caracteristiques:
       sobre et épurée propre à l’environnement créatif.
 gallery:
   - images:
-      - image: /images/uploads/atelier-d-artiste-charenton.jpg
+      - image: /images/uploads/atelier-d-artiste-charenton.webp
 ---
