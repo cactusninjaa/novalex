@@ -1,6 +1,6 @@
 ---
 title: Création d'un loft
-hero_image: /images/uploads/loft-faisanderie-enhanced-2.png
+hero_image: /images/uploads/loft-faisanderie-enhanced-2.webp
 description: Transformation complète d’un appartement en un loft moderne et
   lumineux au cœur du 16ᵉ arrondissement de Paris tout en alliant design
   contemporain et exigences techniques.
@@ -20,7 +20,7 @@ caracteristiques:
       optimiser la répartition des efforts structurels.
 gallery:
   - images:
-      - image: /images/uploads/loft-faisanderie-enhanced-2.png
-      - image: /images/uploads/faisenderie-loft-transformé.png
-      - image: /images/uploads/creation-loft-rue-de-la-faisanderie.jpeg
+      - image: /images/uploads/loft-faisanderie-enhanced-2.webp
+      - image: /images/uploads/faisenderie-loft-transformé.webp
+      - image: /images/uploads/creation-loft-rue-de-la-faisanderie.webp
 ---
