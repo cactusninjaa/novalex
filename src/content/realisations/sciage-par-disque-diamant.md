@@ -18,4 +18,12 @@ caracteristiques:
 gallery:
   - images:
       - image: /images/uploads/scie-murale.webp
+    block_title: Exemple de découpe
+  - block_title: Scie utilisée
+    images:
+      - image: /images/uploads/capture-d’écran-2025-03-20-à-12.42.29.png
+      - image: /images/uploads/capture-d’écran-2025-03-20-à-12.44.13.png
+  - block_title: Outil pour le carottage
+    images:
+      - image: /images/uploads/9605418811422.avif
 ---
