@@ -1,5 +1,5 @@
 ---
-title: Sciage par disque diamant
+title: Sciage et carottage
 hero_image: /images/uploads/scie-murale.webp
 description: >+
   Sciage par disque diamant, une technique de découpe de matériaux durs tels que
