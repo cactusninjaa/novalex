@@ -1,7 +1,8 @@
+// postcss.config.cjs
 module.exports = {
-    plugins: {
-      'tailwindcss': {},
-      'autoprefixer': {},
-      'cssnano': process.env.NODE_ENV === 'production' ? { preset: 'default' } : false
-    }
+  plugins: {
+    'tailwindcss': {},
+    'autoprefixer': {}
+    // 'cssnano' retiré
   }
+}
