@@ -15,7 +15,6 @@ export async function getStaticPaths() {
 // 2. Pour votre modèle, vous pouvez obtenir l'entrée directement à partir de la propriété
 const { realisation } = Astro.params;
 const post = await getEntryBySlug('realisations', realisation);
-console.log(post.data.caracteristiques);
 ---
 <Layout>
     <div class="flex gap-12 md:gap-16 flex-col justify-center items-center">
@@ -39,11 +38,12 @@ console.log(post.data.caracteristiques);
                 
                 <!-- Parcours chaque "post" dans le tableau -->
                 {post.data.gallery.map((gallery: { block_title: string; images: any[]; }) => (
-                    <div>
+                    <hr />
+                    <div class="my-8">
                         <h3 class="text-2xl my-4">{gallery.block_title}</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {gallery.images.map((image: { image: string | null | undefined; }) => (
-                            <img src={image.image} alt="Image de la galerie" class="w-full aspect-1/1 rounded-3xl object-cover" />
+                            <img src={image.image} alt="Image de la galerie" class="w-full aspect-3/4 rounded-3xl object-cover" />
                         ))}
                         </div>
                     </div>
