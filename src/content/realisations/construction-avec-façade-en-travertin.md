@@ -1,6 +1,5 @@
 ---
-title: Construction avec façade en béton blanc réalisée avec des moulages aspect
-  travertin
+title: Construction avec façade en béton blanc
 hero_image: /images/uploads/rue-de-picpus.webp
 description: >+
   Construction avec façade en béton blanc réalisée avec des moulages aspect
