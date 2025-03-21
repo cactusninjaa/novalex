@@ -13,9 +13,8 @@ caracteristiques:
   - block_title: Adresse
     block_value: Paris 12e
   - block_title: Spécificités techniques
-    block_value: La façade a été conçue avec un béton blanc de haute qualité,
-      offrant une finition lisse et esthétique, et habillée de panneaux en
-      travertin pour ajouter un aspect naturel et intemporel. La peau de
+    block_value: Construction avec façade en béton blanc réalisée avec des moulages
+      aspect travertin pour ajouter un aspect naturel et intemporel. La peau de
       travertin a été soigneusement posée pour assurer une adhérence optimale
       tout en maintenant une isolation thermique et phonique efficace. Des
       traitements de surface ont été appliqués sur le béton pour améliorer sa
