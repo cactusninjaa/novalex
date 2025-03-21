@@ -1,8 +1,8 @@
 ---
-title: Construction d'un immeuble en angle
+title: Construction d'un immeuble d’habitation R+7
 hero_image: /images/uploads/32-palouzie-st-ouen-2009-1-.webp
 description: >+
-  Construction d’un immeuble en angle de rue, optimisant l’utilisation de
+  Construction d’un immeuble d’habitation R+7, optimisant l’utilisation de
   l’espace urbain avec une conception moderne et fonctionnelle, tout en
   intégrant des éléments architecturaux qui respectent l’environnement urbain.
 
