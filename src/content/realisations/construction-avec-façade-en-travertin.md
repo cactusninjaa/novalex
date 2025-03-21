@@ -1,10 +1,12 @@
 ---
-title: Construction avec façade en travertin
+title: Construction avec façade en béton blanc réalisée avec des moulages aspect
+  travertin
 hero_image: /images/uploads/rue-de-picpus.webp
 description: >+
-  Construction d’un bâtiment avec une façade en béton blanc, intégrant des
-  éléments décoratifs en peau de type travertin pour créer une esthétique
-  moderne et élégante, tout en garantissant la durabilité de l'ouvrage.
+  Construction avec façade en béton blanc réalisée avec des moulages aspect
+  travertin, intégrant des éléments décoratifs en peau de type travertin pour
+  créer une esthétique moderne et élégante, tout en garantissant la durabilité
+  de l'ouvrage.
 
 caracteristiques:
   - block_title: Maitre d’ouvrage
