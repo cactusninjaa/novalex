@@ -36,6 +36,8 @@ engagements:
       block_description: Nous récupérons et réutilisons notre matériel, privilégions
         les matériaux recyclés et participons à la biodiversité avec
         l’installation de ruches.
+    - block_title: Manger des patates
+      block_description: efzevf
 expertises:
   title: Domaines expertises
   items:
