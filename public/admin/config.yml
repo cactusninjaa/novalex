@@ -4,7 +4,7 @@ backend:
 
 
 preview_styles:
-  - ../src/css/global.css
+  - "/src/css/global.css"
 
 media_folder: "public/images/uploads"  # Où sont stockées les images
 public_folder: "/images/uploads"
