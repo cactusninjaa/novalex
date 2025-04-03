@@ -15,6 +15,12 @@ featured_realisations:
     - Réhabilitation immeuble
     - Construction d'immeuble HQE
     - Remplacement de tranformateur
+équipe:
+  title: L'écologie
+  description: Nous récupérons et réutilisons notre matériel, privilégions les
+    matériaux recyclés et participons à la biodiversité avec l’installation de
+    ruches dans les espaces verts au siège de l'entreprise.
+  image: /images/uploads/ruche-potager-voisins-1-.webp
 engagements:
   title: Nos engagements
   description: Nous nous engageons pour des chantiers plus propres et plus sûrs,
@@ -32,10 +38,6 @@ engagements:
       block_description: Nous favorisons l’insertion professionnelle et veillons à
         transmettre nos valeurs de respect et de solidarité à chaque membre de
         l’équipe.
-    - block_title: Écologie
-      block_description: Nous récupérons et réutilisons notre matériel, privilégions
-        les matériaux recyclés et participons à la biodiversité avec
-        l’installation de ruches.
 expertises:
   title: Domaines expertises
   items:
