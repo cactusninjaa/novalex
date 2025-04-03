@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main  # Change si nécessaire
 
+
+preview_styles:
+  - ../src/css/global.css
+
 media_folder: "public/images/uploads"  # Où sont stockées les images
 public_folder: "/images/uploads"
 
