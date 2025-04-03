@@ -15,7 +15,7 @@ featured_realisations:
     - Réhabilitation immeuble
     - Construction d'immeuble HQE
     - Remplacement de tranformateur
-équipe:
+ecologie:
   title: L'écologie
   description: Nous récupérons et réutilisons notre matériel, privilégions les
     matériaux recyclés et participons à la biodiversité avec l’installation de
