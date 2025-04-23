@@ -9,7 +9,7 @@ caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
   - block_title: Adresse
-    block_value: Paris 9e
+    block_value: 27 rue Bergeres
   - block_title: Spécificités techniques
     block_value: Pour recréer à l’identique le carrelage existant, nous avons
       réalisé un moule en silicone haute précision à partir d’un fragment
