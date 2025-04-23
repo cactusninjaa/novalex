@@ -1,5 +1,5 @@
 ---
-title: Remplacement de tranformateur
+title: Remplacement de transformateur
 hero_image: /images/uploads/préparation-sortie-rue-erasme.webp
 description: >+
   Extraction et remplacement de transformateurs Enedis, en assurant la
