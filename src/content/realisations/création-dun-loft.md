@@ -8,7 +8,7 @@ caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
   - block_title: Adresse
-    block_value: 126 rue de la Faisandrie PARIS 16e
+    block_value: 126 rue de la Faisandrie PARIS XVI
   - block_title: Spécificités techniques
     block_value: L’un des défis majeurs de ce chantier a été la suppression de
       plusieurs cloisons porteuses pour créer un espace ouvert tout en
