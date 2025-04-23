@@ -9,7 +9,7 @@ caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
   - block_title: Adresse
-    block_value: 16 place Denfert Rocheraud
+    block_value: PARIS XIV Denfert
   - block_title: Date
     block_value: 29/10/2013
   - block_title: Spécificités techniques
