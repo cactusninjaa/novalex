@@ -9,7 +9,7 @@ description: >+
 
 caracteristiques:
   - block_title: Maitre d’ouvrage
-    block_value: Novalex
+    block_value: SIEMP
   - block_title: Adresse
     block_value: Paris 12e
   - block_title: Spécificités techniques
