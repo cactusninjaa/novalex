@@ -8,7 +8,7 @@ description: >+
 
 caracteristiques:
   - block_title: Maitre d’ouvrage
-    block_value: Novalex
+    block_value: 1001 vies Habitat
   - block_title: Adresse
     block_value: Yerres
   - block_title: Spécificités techniques

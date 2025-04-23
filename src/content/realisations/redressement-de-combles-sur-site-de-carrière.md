@@ -7,7 +7,7 @@ caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
   - block_title: Adresse
-    block_value: Paris 5e
+    block_value: Paris V
   - block_title: Date
     block_value: 2000 - 2001
   - block_title: Spécificités techniques

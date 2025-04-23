@@ -8,7 +8,7 @@ description: >+
 
 caracteristiques:
   - block_title: Maitre d’ouvrage
-    block_value: Novalex
+    block_value: Orly parc
   - block_title: Adresse
     block_value: Charenton
   - block_title: Date

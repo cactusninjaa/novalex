@@ -9,9 +9,9 @@ description: >+
 
 caracteristiques:
   - block_title: Maitre d’ouvrage
-    block_value: Novalex
+    block_value: SIEMP
   - block_title: Adresse
-    block_value: Paris 12e
+    block_value: Paris XII
   - block_title: Spécificités techniques
     block_value: Construction avec façade en béton blanc réalisée avec des moulages
       aspect travertin pour ajouter un aspect naturel et intemporel. La peau de

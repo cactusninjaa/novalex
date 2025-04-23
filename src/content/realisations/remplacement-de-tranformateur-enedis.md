@@ -1,5 +1,5 @@
 ---
-title: Remplacement de tranformateur
+title: Remplacement de transformateur
 hero_image: /images/uploads/préparation-sortie-rue-erasme.webp
 description: >+
   Extraction et remplacement de transformateurs Enedis, en assurant la
@@ -10,7 +10,7 @@ caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
   - block_title: Adresse
-    block_value: Paris 5e, Pont de l'Alma et Courcelles
+    block_value: Paris V, Pont de l'Alma et Courcelles
   - block_title: Spécificités techniques
     block_value: L’opération a nécessité la mise en place d’une protection parapluie
       pour sécuriser la zone et prévenir toute infiltration d’eau pendant les
