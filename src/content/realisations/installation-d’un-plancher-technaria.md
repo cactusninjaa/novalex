@@ -6,7 +6,7 @@ description: Installation d’un plancher technaria, permettant d’optimiser
   offrant une solution modulable et esthétique.
 caracteristiques:
   - block_title: Adresse
-    block_value: 17 rue Tournon
+    block_value: 17 rue Tournon PARIS VI
   - block_title: Maitre d’ouvrage
     block_value: Novalex
   - block_title: Spécificités techniques
