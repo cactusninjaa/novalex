@@ -8,7 +8,7 @@ caracteristiques:
   - block_title: Maitre d’ouvrage
     block_value: Novalex
   - block_title: Adresse
-    block_value: Paris 7e
+    block_value: 100 rue de Varenne PARIS VII
   - block_title: Date
     block_value: 02/04/2025
   - block_title: Spécificités techniques
