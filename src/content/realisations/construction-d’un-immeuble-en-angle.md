@@ -8,7 +8,7 @@ description: >+
 
 caracteristiques:
   - block_title: Maitre d’ouvrage
-    block_value: Novalex
+    block_value: Nexity
   - block_title: Adresse
     block_value: Saint-Ouen
   - block_title: Spécificités techniques
