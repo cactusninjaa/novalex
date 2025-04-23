@@ -14,7 +14,7 @@ featured_realisations:
   items:
     - Réhabilitation immeuble
     - Construction d'immeuble HQE
-    - Remplacement de tranformateur
+    - Création d'un loft
 ecologie:
   title: L'écologie
   description: Nous récupérons et réutilisons notre matériel, privilégions les
