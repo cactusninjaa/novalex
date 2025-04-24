@@ -5,7 +5,7 @@ description: Transformation complète d’un appartement en un loft moderne et
   lumineux au cœur du 16ᵉ arrondissement de Paris tout en alliant design
   contemporain et exigences techniques.
 caracteristiques:
-  - block_title: Maitre d’ouvrage
+  - block_title: Entreprise
     block_value: Novalex
   - block_title: Adresse
     block_value: 126 rue de la Faisandrie PARIS XVI
