@@ -7,7 +7,7 @@ description: >+
   commande et le raccordement entre les deux.
 
 caracteristiques:
-  - block_title: Maitre d’ouvrage
+  - block_title: Entreprise
     block_value: Novalex
   - block_title: Adresse
     block_value: Cesson
