@@ -4,7 +4,7 @@ hero_image: /images/uploads/abbé-de-l-épée.webp
 description: >2
    Redressement des combles d’un immeuble situé dans le 5ᵉ arrondissement de Paris, reposant sur un site de carrière souterraine.
 caracteristiques:
-  - block_title: Maitre d’ouvrage
+  - block_title: Entreprise
     block_value: Novalex
   - block_title: Adresse
     block_value: Paris V
