@@ -7,7 +7,7 @@ description: >+
   la chaîne en matière de design, de sécurité et de performance.
 
 caracteristiques:
-  - block_title: Maitre d’ouvrage
+  - block_title: Entreprise
     block_value: Novalex
   - block_title: Adresse
     block_value: Charenton
