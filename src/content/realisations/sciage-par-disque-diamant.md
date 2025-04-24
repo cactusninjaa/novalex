@@ -7,7 +7,7 @@ description: >+
   précises et nettes tout en minimisant les vibrations et la poussière.
 
 caracteristiques:
-  - block_title: Maitre d’ouvrage
+  - block_title: Entreprise
     block_value: Novalex
   - block_title: Spécificités techniques
     block_value: Le sciage est effectué à l’aide de machines spécialisées, comme des
