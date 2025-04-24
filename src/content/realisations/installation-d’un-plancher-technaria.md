@@ -5,10 +5,10 @@ description: Installation d’un plancher technaria, permettant d’optimiser
   l’intégration des réseaux électriques, hydrauliques et informatiques tout en
   offrant une solution modulable et esthétique.
 caracteristiques:
+  - block_title: Entreprise
+    block_value: Novalex
   - block_title: Adresse
     block_value: 17 rue Tournon PARIS VI
-  - block_title: Maitre d’ouvrage
-    block_value: Novalex
   - block_title: Spécificités techniques
     block_value: Le plancher technaria repose sur une structure surélevée composée
       de dalles démontables en matériaux résistants (bois composite, acier ou
