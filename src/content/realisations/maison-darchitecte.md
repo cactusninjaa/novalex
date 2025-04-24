@@ -5,7 +5,7 @@ description: Conception et réalisation une maison d’architecte moderne, metta
   en valeur une grande verrière qui apporte une luminosité naturelle abondante
   et une connexion fluide entre l’intérieur et l’extérieur.
 caracteristiques:
-  - block_title: Maitre d’ouvrage
+  - block_title: Entreprise
     block_value: Novalex
   - block_title: Adresse
     block_value: Noisy-le-Grand
