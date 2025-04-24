@@ -6,7 +6,7 @@ description: >+
   l’esthétique de la façade, ce modèle n’étant plus disponible dans le commerce.
 
 caracteristiques:
-  - block_title: Maitre d’ouvrage
+  - block_title: Entreprise
     block_value: Novalex
   - block_title: Adresse
     block_value: 27 rue Bergeres PARIS IX
