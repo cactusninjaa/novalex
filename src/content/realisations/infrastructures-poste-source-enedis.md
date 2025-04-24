@@ -8,7 +8,7 @@ description: >+
 
 
 caracteristiques:
-  - block_title: Maitre d’ouvrage
+  - block_title: Entreprise
     block_value: Novalex
   - block_title: Spécificités techniques
     block_value: Le blindage a été conçu à partir de structures métalliques
