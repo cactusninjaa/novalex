@@ -80,5 +80,5 @@ certifications:
       block_description: Avec une couverture décennale et responsabilité civile via
         SMA, notre entreprise se distingue par une sinistralité très faible,
         garantissant ainsi la qualité et la sécurité de nos interventions.
-      block_image: /images/uploads/screenshot-2025-12-11-at-19.32.17.png
+      block_image: /images/uploads/sma.png
 ---
