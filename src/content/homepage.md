@@ -78,7 +78,7 @@ certifications:
       block_image: /images/uploads/logoenedis.png
     - block_title: Assurance
       block_description: Avec une couverture décennale et responsabilité civile via
-        MMA, notre entreprise se distingue par une sinistralité très faible,
+        SMA, notre entreprise se distingue par une sinistralité très faible,
         garantissant ainsi la qualité et la sécurité de nos interventions.
-      block_image: /images/uploads/logo-mma.webp
+      block_image: /images/uploads/sma-btp.png
 ---
